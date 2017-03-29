@@ -7,12 +7,8 @@
   "srcDir": "./app",
   "distDir": "./dist",
   "files": [{
-    "fileId": "1ehh3ISrwq5lHNQS-eEs_i30Wi7UAF9txWgYTo56NFBI",
+    "fileId": "1ZaLM3eoUgLb-4tJCu66fbjQtNZPTL1mueTKfFtb-tgk",
     "type": "doc",
     "name": "story"
-  }, {
-    "fileId": "1EACmSpajC1V7nJtwIxfA9aR-HAbTSDugSjStSSKWEaE",
-    "type": "sheet",
-    "name": "meta"
   }]
 }

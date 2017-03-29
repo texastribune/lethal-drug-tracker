@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 {% import 'macros/shares.html' as shares %}
 
+{% set context = data.story %}
+
+{% block body_class %}blackout{% endblock body_class %}
+
 {% block content %}
 
 <div class="container">
   <header class="article-header text-center">
-    <h1 class="article-title">The only member-supported, digital-first, nonpartisan media organization</h1>
+    <h1 class="article-title">{{ context.headline }}</h1>
     <p class="article-byline">
-      <span class="article-author">By <a href="#">Super Cool Corgi</a></span>
-      <span class="article-pub-date"><time datetime="2017-01-19">Jan. 19, 2017</time></span>
+      <span class="article-pub-date">Last Updated: <time datetime="{{ context.lastDate }}">{{ apFormatDate(context.lastDate) }}</time></span>
     </p>
     <div class="article-shares">
       <a class="button button--small button--facebook article-shares-button" href="{{ shares.facebook(staticAbsolute('/')) }}" ga-on="click" ga-hit-type="social" ga-social-network="Facebook" ga-social-action="share">
@@ -30,6 +33,9 @@
   </header>
 
   <div class="intro-prose">
+    <p class="article-byline text-center">
+      <span class="article-author">By {{ context.author }}</span>
+    </p>
     <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur, blanditiis, eligendi hic exercitationem ab culpa! Optio fugiat architecto pariatur cum. <a href="#">Distinctio ab iusto temporibus</a>, deserunt quam placeat incidunt aspernatur!</p>
     <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quasi labore, suscipit saepe. Officia dolor natus asperiores voluptatum, dolores eius unde eligendi. Praesentium placeat, aliquam ipsa, optio assumenda expedita sequi.</p>
   </div>

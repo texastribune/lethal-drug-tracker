@@ -18,6 +18,11 @@ body {
   background-color: $color-white;
   color: $color-text;
   font-family: $font-sans-serif;
+
+  &.blackout {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }
 
 // Remove the inner border and padding in Firefox.

@@ -28,6 +28,10 @@
   margin-top: 1em;
   text-transform: uppercase;
 
+  .blackout & {
+    color: $color-offwhite;
+  }
+
   a {
     @include default-uppercase-link;
   }

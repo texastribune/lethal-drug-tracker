@@ -58,4 +58,8 @@
   &:hover {
     text-decoration: underline;
   }
+
+  .blackout & {
+    color: $color-text-link;
+  }
 }

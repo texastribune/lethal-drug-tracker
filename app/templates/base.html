@@ -21,7 +21,7 @@
   <!-- End fonts -->
   <link rel="stylesheet" href="{{ static('styles/main.css') }}">
 </head>
-<body>
+<body class="{% block body_class %}{% endblock body_class %}">
 
 {% include 'includes/svg-defs.html' %}
 

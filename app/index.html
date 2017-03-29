@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% import 'macros/shares.html' as shares %}
+
+{% block content %}
+
+<div class="container">
+  <header class="article-header text-center">
+    <h1 class="article-title">The only member-supported, digital-first, nonpartisan media organization</h1>
+    <p class="article-byline">
+      <span class="article-author">By <a href="#">Super Cool Corgi</a></span>
+      <span class="article-pub-date"><time datetime="2017-01-19">Jan. 19, 2017</time></span>
+    </p>
+    <div class="article-shares">
+      <a class="button button--small button--facebook article-shares-button" href="{{ shares.facebook(staticAbsolute('/')) }}" ga-on="click" ga-hit-type="social" ga-social-network="Facebook" ga-social-action="share">
+        <svg class="icon icon-facebook">
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a>
+      <a class="button button--small button--twitter article-shares-button" href="{{ shares.twitter(staticAbsolute('/'), '', '') }}" ga-on="click" ga-hit-type="social" ga-social-network="Twitter" ga-social-action="tweet">
+        <svg class="icon icon-twitter">
+          <use xlink:href="#icon-twitter"></use>
+        </svg>
+      </a>
+      <a class="button button--small button--yellow article-shares-button" href="{{ shares.email('The Texas Tribune', '\n\n' + staticAbsolute('/'))}}" ga-on="click" ga-hit-type="social" ga-social-network="Email" ga-social-action="email">
+        <svg class="icon icon-envelope">
+          <use xlink:href="#icon-envelope"></use>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="intro-prose">
+    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur, blanditiis, eligendi hic exercitationem ab culpa! Optio fugiat architecto pariatur cum. <a href="#">Distinctio ab iusto temporibus</a>, deserunt quam placeat incidunt aspernatur!</p>
+    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quasi labore, suscipit saepe. Officia dolor natus asperiores voluptatum, dolores eius unde eligendi. Praesentium placeat, aliquam ipsa, optio assumenda expedita sequi.</p>
+  </div>
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ static('scripts/main.js') }}"></script>
+{% endblock scripts %}

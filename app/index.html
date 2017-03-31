@@ -13,6 +13,7 @@
   <header class="article-header text-center">
     <h1 class="article-title">{{ context.headline }}</h1>
     <p class="article-byline">
+      <span class="article-author">By {{ context.author }}</span>
       <span class="article-pub-date">Last Updated: <time datetime="{{ context.lastDate }}">{{ apFormatDate(context.lastDate) }}</time></span>
     </p>
     <!-- <div class="article-shares">
@@ -35,29 +36,33 @@
   </header>
 
   <div class="graphic">
-    <div class="graphic--doses">
-      <span class="graphic--dose-num">{{ context.currentDose }}</span> doses
+    <div class="doses">
+      <span class="dose--num">{{ context.currentDose }}</span> doses
     </div>
-    <div class="graphic--executions">
-      <span class="graphic--execution-num">{{ context.currentExecutions }}</span> executions
-  </div>
+    <div class="executions">
+      <span class="execution--num">{{ context.currentExecutions }}</span> scheduled executions
+    </div>
 
-  <div class="log">
-    <h4 class="log-title">What's next?</h4>
-    {{ future_log(context.futureLog) }}
-  </div>
+    <div class="log">
+      <h4 class="log--title">Future inventory changes</h4>
+      {{ future_log(context.futureLog) }}
+    </div>
 
-  <div class="log">
-    <h4 class="log-title">Recent changes</h4>
-    {{ past_log(context.pastLog) }}
+    <div class="log">
+      <h4 class="log--title">Recent inventory changes</h4>
+      {{ past_log(context.pastLog) }}
+    </div>
   </div>
 
   <div class="prose">
-    <p class="article-byline text-center">
-      <span class="article-author">By {{ context.author }}</span>
-    </p>
     {{ prose(context.prose) }}
   </div>
+
+  <div class="notes">
+    <p>Design by Ben Hasson and Emily Albracht.</p>
+  </div>
+
+
 </div>
 
 {% endblock content %}

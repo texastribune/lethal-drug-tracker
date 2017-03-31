@@ -1,0 +1,76 @@
+//styles for main graphic
+.graphic {
+  margin-bottom: 2.5rem;
+
+  .doses {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .executions {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+.log {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 34em;
+
+  &--title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &--item {
+    @include clearfix;
+    font-size: .925rem;
+    line-height: 1.2rem;
+    margin-bottom: .5rem;
+  }
+
+  &--highlight {
+    padding: 0 .25rem;
+    display: block;
+    float: left;
+    width: 5rem;
+    position: absolute;
+    text-align: center;
+
+    .expire & {
+      background-color: #005ab3;
+    }
+
+    .execution & {
+      background-color: #b30000;
+    }
+
+    .add & {
+      background-color: #00b35a;
+    }
+  }
+
+  &--desc {
+    margin-left: 5.5rem;
+    display: block;
+  }
+
+  &--underline {
+    .expire & {
+      border-bottom: 2px solid #005ab3;
+    }
+
+    .execution & {
+      border-bottom: 2px solid #b30000;
+    }
+
+    .add & {
+      border-bottom: 2px solid #00b35a;
+    }
+  }
+}

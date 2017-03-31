@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% import 'macros/shares.html' as shares %}
+{% from 'macros/prose.html' import prose %}
+{% from 'macros/logs.html' import past_log, future_log %}
 
 {% set context = data.story %}
 
@@ -13,7 +15,7 @@
     <p class="article-byline">
       <span class="article-pub-date">Last Updated: <time datetime="{{ context.lastDate }}">{{ apFormatDate(context.lastDate) }}</time></span>
     </p>
-    <div class="article-shares">
+    <!-- <div class="article-shares">
       <a class="button button--small button--facebook article-shares-button" href="{{ shares.facebook(staticAbsolute('/')) }}" ga-on="click" ga-hit-type="social" ga-social-network="Facebook" ga-social-action="share">
         <svg class="icon icon-facebook">
           <use xlink:href="#icon-facebook"></use>
@@ -29,15 +31,32 @@
           <use xlink:href="#icon-envelope"></use>
         </svg>
       </a>
-    </div>
+    </div> -->
   </header>
 
-  <div class="intro-prose">
+  <div class="graphic">
+    <div class="graphic--doses">
+      <span class="graphic--dose-num">{{ context.currentDose }}</span> doses
+    </div>
+    <div class="graphic--executions">
+      <span class="graphic--execution-num">{{ context.currentExecutions }}</span> executions
+  </div>
+
+  <div class="log">
+    <h4 class="log-title">What's next?</h4>
+    {{ future_log(context.futureLog) }}
+  </div>
+
+  <div class="log">
+    <h4 class="log-title">Recent changes</h4>
+    {{ past_log(context.pastLog) }}
+  </div>
+
+  <div class="prose">
     <p class="article-byline text-center">
       <span class="article-author">By {{ context.author }}</span>
     </p>
-    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur, blanditiis, eligendi hic exercitationem ab culpa! Optio fugiat architecto pariatur cum. <a href="#">Distinctio ab iusto temporibus</a>, deserunt quam placeat incidunt aspernatur!</p>
-    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quasi labore, suscipit saepe. Officia dolor natus asperiores voluptatum, dolores eius unde eligendi. Praesentium placeat, aliquam ipsa, optio assumenda expedita sequi.</p>
+    {{ prose(context.prose) }}
   </div>
 </div>
 

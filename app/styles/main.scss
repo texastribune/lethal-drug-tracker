@@ -19,3 +19,13 @@
 @import 'components/site-header';
 @import 'components/footer';
 @import 'components/graphic';
+
+//index styles
+.notes {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 40rem;
+  font-size: .8rem;
+}

@@ -12,7 +12,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  max-width: 20em;
+  max-width: 40rem;
 
   @include mq($from: m) {
     font-size: 2rem;
@@ -97,7 +97,7 @@
   margin-left: auto; // Centers <p> tag within max-width
   margin-right: auto; // Centers <p> tag within max-width
   margin-top: 1em; // Ensures spacing above the <p> syncs up with font-size
-  max-width: 34em; // Controls the measure
+  max-width: 40rem; // Controls the measure
 
   > a {
     @include default-link;

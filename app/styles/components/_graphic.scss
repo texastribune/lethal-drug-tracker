@@ -20,7 +20,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  max-width: 34em;
+  max-width: 30rem;
 
   &--title {
     text-transform: uppercase;
@@ -58,6 +58,13 @@
   &--desc {
     margin-left: 5.5rem;
     display: block;
+  }
+
+  &--date {
+    font-size: .7rem;
+    text-transform: uppercase;
+    color: #999;
+    padding: 0 0.5em;
   }
 
   &--underline {

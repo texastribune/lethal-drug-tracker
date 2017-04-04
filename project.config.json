@@ -2,7 +2,7 @@
   "bucket": "moose.texastribune.org",
   "folder": "corgis",
   "rawAssetsFolder": "raw_assets",
-  "dataDir": "./data",
+  "dataDir": "./app/assets/data",
   "assetsDir": "./app/assets",
   "srcDir": "./app",
   "distDir": "./dist",

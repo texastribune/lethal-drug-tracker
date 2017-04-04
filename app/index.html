@@ -58,8 +58,10 @@
     {{ prose(context.prose) }}
   </div>
 
+  <div id="step-chart" class="chart"></div>
+
   <div class="notes">
-    <p>Design by Ben Hasson and Emily Albracht.</p>
+    <p>{{ prose(context.notes) }}</p>
   </div>
 
 
@@ -68,6 +70,7 @@
 {% endblock content %}
 
 {% block scripts %}
+<script>window.LINE_JSON = "{{ static('assets/data/story.json') }}"</script>
 {{ super() }}
 <script src="{{ static('scripts/main.js') }}"></script>
 {% endblock scripts %}

@@ -4,6 +4,22 @@
   margin-right: auto;
   margin-top: 2rem;
   max-width: 40rem;
+
+  .add {
+    fill: blue;
+  }
+
+  .execution {
+    fill: red;
+  }
+
+  .expire {
+    fill: green;
+  }
+
+  .return {
+    fill: green;
+  }
 }
 
 .axis {
@@ -15,8 +31,15 @@
     stroke: #ccc;
   }
 
-  .tick text {
-    fill: #ccc;
+  .tick {
+
+    text {
+      fill: #ccc;
+    }
+
+    line {
+      stroke: #ccc;
+    }
   }
 }
 

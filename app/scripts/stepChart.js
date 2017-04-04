@@ -34,13 +34,13 @@ export default function buildChart() {
     .ticks(5)
     .tickSize(0)
     .tickFormat(function(d) {
-      // return d;
-      return d === y.domain()[1] ? d + ' doses' : d;
+      ///why won't 1 work in domain???
+      return d === y.domain()[0] ? d + ' doses' : d;
     });
 
   var valueline = d3.line()
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(+d.total); })
+    .y(function(d) { return y(d.total); })
     .curve(d3.curveStepAfter);
 
   var svg = d3.select('#step-chart')
@@ -66,12 +66,23 @@ export default function buildChart() {
 
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain([0, d3.max(data, function(d) { return +d.total; })]);
+    y.domain([0, d3.max(data, function(d) { return d.total; })]);
 
     // Add the valueline path.
     svg.append('path')
       .attr('class', 'line')
       .attr('d', valueline(data));
+
+    // Add the circles
+    svg.selectAll("circle")
+      .data(data)
+      .enter().append("svg:circle")
+      .attr('class', function(d) { return d.change })
+      .attr("cx", function(d) { return x(d.date) })
+      .attr("cy", function(d) { return y(d.total) })
+      .attr("stroke-width", "none")
+      .attr("fill-opacity", .8)
+      .attr("r", 5);
 
     // Add the X Axis
     svg.append('g')

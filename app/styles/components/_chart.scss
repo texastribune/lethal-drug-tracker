@@ -1,3 +1,5 @@
+$grid-gray: #888;
+
 .chart {
   margin-bottom: 1rem;
   margin-left: auto;
@@ -24,27 +26,27 @@
 
 .axis {
   .domain {
-    stroke: #ccc;
+    stroke: $color-primary;
   }
 
   .range {
-    stroke: #ccc;
+    stroke: $grid-gray;
   }
 
   .tick {
 
     text {
-      fill: #ccc;
+      fill: $grid-gray;
     }
 
     line {
-      stroke: #ccc;
+      stroke: $grid-gray;
     }
   }
 }
 
 .line {
-  stroke: white;
-  stroke-width: 2px;
+  stroke: $color-offwhite;
+  stroke-width: 3px;
   fill: none;
 }

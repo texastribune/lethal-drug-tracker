@@ -14,7 +14,7 @@ export default function buildChart() {
 
   var margin = {top: 45, right: 30, bottom: 30, left: 20},
       width = windowWidth - margin.left - margin.right,
-      height = 300 - margin.top - margin.bottom;
+      height = 350 - margin.top - margin.bottom;
 
   // parse the date / time
   var parseTime = d3.timeParse("%Y-%m-%d");
@@ -31,11 +31,10 @@ export default function buildChart() {
 
   var yAxis = d3.axisLeft()
     .scale(y)
-    .ticks(5)
-    .tickSize(0)
+    .ticks(6)
+    .tickSize(-width)
     .tickFormat(function(d) {
-      ///why won't 1 work in domain???
-      return d === y.domain()[0] ? d + ' doses' : d;
+      return d;//return d === y.domain()[1] ? d + ' doses' : d;
     });
 
   var valueline = d3.line()
@@ -66,7 +65,29 @@ export default function buildChart() {
 
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain([0, d3.max(data, function(d) { return d.total; })]);
+    y.domain([0, d3.max(data, function(d) { return (Math.ceil((d.total)/5)*5); })]);
+
+    // Add the X Axis
+    svg.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,' + height + ')')
+        .call(xAxis);
+
+    // Add the Y Axis
+    var yTicks = svg.append('g')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
+    var lastYTick = yTicks.select('.tick:last-of-type');
+
+    // text and position for y axis label
+    var title = lastYTick.append('text')
+      .attr('x', '1.75rem')
+      .attr('dy', '.23rem')
+      .text('doses');
+
+    lastYTick.select('line')
+      .attr('x1', title.node().getBBox().width + 6);
 
     // Add the valueline path.
     svg.append('path')
@@ -82,21 +103,6 @@ export default function buildChart() {
       .attr("cy", function(d) { return y(d.total) })
       .attr("stroke-width", "none")
       .attr("fill-opacity", .8)
-      .attr("r", 5);
-
-    // Add the X Axis
-    svg.append('g')
-        .attr('class', 'x axis')
-        .attr('transform', 'translate(0,' + height + ')')
-        .call(xAxis);
-
-    // Add the Y Axis
-    svg.append('g')
-        .attr('class', 'y axis')
-        .call(yAxis)
-        .selectAll('text')
-          .attr('text-anchor', 'start')
-          .attr('x', -13)
-          .attr('dy', -0.5);
+      .attr("r", 6);
   });
 }

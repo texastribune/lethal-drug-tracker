@@ -7,20 +7,25 @@ $grid-gray: #888;
   margin-top: 2rem;
   max-width: 40rem;
 
-  .add {
-    fill: $add;
-  }
+  .circle {
+    stroke-width: 1;
+    stroke: $grid-gray;
 
-  .execution {
-    fill: $execution;
-  }
+    &.add {
+      fill: $add;
+    }
 
-  .expire {
-    fill: $expire;
-  }
+    &.execution {
+      fill: $execution;
+    }
 
-  .return {
-    fill: $expire;
+    &.expire {
+      fill: $expire;
+    }
+
+    &.return {
+      fill: $expire;
+    }
   }
 }
 
@@ -66,7 +71,6 @@ $grid-gray: #888;
     display: inline-block;
     height: .75rem;
     margin-right: .25rem;
-    // opacity: .8;
     width: .75rem;
 
     &.expire {

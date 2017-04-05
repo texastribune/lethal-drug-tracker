@@ -14,7 +14,7 @@ export default function buildChart() {
 
   var margin = {top: 20, right: 10, bottom: 20, left: 25},
       width = windowWidth - margin.left - margin.right,
-      height = 350 - margin.top - margin.bottom;
+      height = 300 - margin.top - margin.bottom;
 
   // parse the date / time
   var parseTime = d3.timeParse("%Y-%m-%d");
@@ -98,12 +98,10 @@ export default function buildChart() {
     svg.selectAll("circle")
       .data(data)
       .enter().append("svg:circle")
-      .attr('class', function(d) { return d.change })
+      .attr('class', function(d) { return 'circle ' + d.change })
       .attr("cx", function(d) { return x(d.date) })
       .attr("cy", function(d) { return y(d.total) })
-      .attr("stroke-width", "none")
-      .attr("fill-opacity", .9)
-      .attr("r", 7);
+      .attr("r", 6);
   });
 
 

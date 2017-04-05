@@ -5,15 +5,10 @@ export default function buildChart() {
 
   d3.selectAll('svg').remove();
 
-  var windowWidth;
-  if(window.innerWidth > 640) {
-    windowWidth =  640;
-  } else {
-    windowWidth = window.innerWidth;
-  }
+  var containerWidth = document.getElementById('step-chart').offsetWidth;
 
-  var margin = {top: 20, right: 10, bottom: 20, left: 25},
-      width = windowWidth - margin.left - margin.right,
+  var margin = {top: 15, right: 15, bottom: 20, left: 15},
+      width = containerWidth - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
   // parse the date / time

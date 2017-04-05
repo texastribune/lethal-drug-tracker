@@ -58,7 +58,13 @@
     {{ prose(context.prose) }}
   </div>
 
-  <div id="step-chart" class="chart"></div>
+  <div id="step-chart" class="chart">
+    <ul class="legend">
+      <li class="legend--item"><i class="expire"></i>Doses expired</li>
+      <li class="legend--item"><i class="add"></i>Doses added</li>
+      <li class="legend--item"><i class="execution"></i>Execution</li>
+    </ul>
+  </div>
 
   <div class="notes">
     <p>{{ prose(context.notes) }}</p>

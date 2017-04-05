@@ -50,3 +50,35 @@ $grid-gray: #888;
   stroke-width: 3px;
   fill: none;
 }
+
+.legend {
+  text-align: center;
+
+  &--item {
+    color: $grid-gray;
+    display: inline-block;
+    font-size: .875rem;
+    padding-right: .75rem;
+  }
+
+  i {
+    border-radius: .75rem;
+    display: inline-block;
+    height: .75rem;
+    margin-right: .25rem;
+    opacity: .8;
+    width: .75rem;
+
+    &.expire {
+      background-color: green;
+    }
+
+    &.add {
+      background-color: blue;
+    }
+
+    &.execution {
+      background-color: red;
+    }
+  }
+}

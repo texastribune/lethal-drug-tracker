@@ -12,7 +12,7 @@ export default function buildChart() {
     windowWidth = window.innerWidth;
   }
 
-  var margin = {top: 45, right: 30, bottom: 30, left: 20},
+  var margin = {top: 20, right: 10, bottom: 20, left: 25},
       width = windowWidth - margin.left - margin.right,
       height = 350 - margin.top - margin.bottom;
 
@@ -105,4 +105,6 @@ export default function buildChart() {
       .attr("fill-opacity", .8)
       .attr("r", 6);
   });
+
+
 }

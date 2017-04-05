@@ -1,6 +1,6 @@
 {
   "bucket": "moose.texastribune.org",
-  "folder": "corgis",
+  "folder": "execution-drugs",
   "rawAssetsFolder": "raw_assets",
   "dataDir": "./app/assets/data",
   "assetsDir": "./app/assets",

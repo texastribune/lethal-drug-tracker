@@ -102,8 +102,8 @@ export default function buildChart() {
       .attr("cx", function(d) { return x(d.date) })
       .attr("cy", function(d) { return y(d.total) })
       .attr("stroke-width", "none")
-      .attr("fill-opacity", .8)
-      .attr("r", 6);
+      .attr("fill-opacity", .9)
+      .attr("r", 7);
   });
 
 

@@ -69,15 +69,15 @@
 
   &--underline {
     .expire & {
-      border-bottom: 2px solid #005ab3;
+      border-bottom: 2px solid $expire;
     }
 
     .execution & {
-      border-bottom: 2px solid #b30000;
+      border-bottom: 2px solid $execution;
     }
 
     .add & {
-      border-bottom: 2px solid #00b35a;
+      border-bottom: 2px solid $add;
     }
   }
 }

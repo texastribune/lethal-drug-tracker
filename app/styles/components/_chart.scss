@@ -8,19 +8,19 @@ $grid-gray: #888;
   max-width: 40rem;
 
   .add {
-    fill: blue;
+    fill: $add;
   }
 
   .execution {
-    fill: red;
+    fill: $execution;
   }
 
   .expire {
-    fill: green;
+    fill: $expire;
   }
 
   .return {
-    fill: green;
+    fill: $expire;
   }
 }
 
@@ -66,19 +66,19 @@ $grid-gray: #888;
     display: inline-block;
     height: .75rem;
     margin-right: .25rem;
-    opacity: .8;
+    // opacity: .8;
     width: .75rem;
 
     &.expire {
-      background-color: green;
+      background-color: $expire;
     }
 
     &.add {
-      background-color: blue;
+      background-color: $add;
     }
 
     &.execution {
-      background-color: red;
+      background-color: $execution;
     }
   }
 }

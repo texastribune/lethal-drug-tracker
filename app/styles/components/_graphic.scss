@@ -81,3 +81,11 @@
     }
   }
 }
+
+.circle {
+  fill: yellow;
+
+  &.execution {
+    fill: red;
+  }
+}

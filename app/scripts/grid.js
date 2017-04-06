@@ -5,20 +5,10 @@ export default function gridMaker() {
 
   d3.selectAll('svg').remove()
 
-  var svg, g, rectsGroup
-  var isMobile = checkIfMobile()
   var container = d3.select('#dot-graphic')
   var containerWidth = document.getElementById('dot-graphic').offsetWidth;
 
-
   var colorScale = { base: d3.color('rgba(204, 186, 165, 1)'), scale: [] }
-
-  // var margin = {
-  //   top: isMobile ? 35 : 60,
-  //   right: isMobile ? 30 : 40,
-  //   bottom: isMobile ? 30 : 60,
-  //   left: isMobile ? 30 : 40
-  // }
 
   var width = containerWidth
   var height = containerWidth
@@ -26,15 +16,9 @@ export default function gridMaker() {
   var x = d3.scaleBand()
   var y = d3.scaleBand()
 
-  svg = container.append('svg')
+  var svg = container.append('svg')
       .attr('width', width)
       .attr('height', height)
-      .attr('shape-rendering', 'crispEdges')
-
-  g = svg.append('g')
-    .attr('transform', 'translate(0,0)')
-
-  rectsGroup = g.append('g')
 
   var jsonURL = window.LINE_JSON
 
@@ -65,21 +49,22 @@ export default function gridMaker() {
       .padding(padding)
       .paddingOuter(0)
 
-    var xWidth = x.bandwidth()
-    var yWidth = y.bandwidth()
+    var radius = x.bandwidth() / 2
 
-    var cells = rectsGroup.selectAll('rect')
+    var circleGroup = svg.selectAll('g')
       .data(data)
-      .enter().append('rect')
-      .attr('class', 'cell')
-      .attr('x', (d, i) => x(i % cols))
-      .attr('y', (d, i) => y(Math.floor(i / cols)))
-      .attr('fill', 'blue')
-      .attr('width', xWidth)
-      .attr('height', yWidth)
-  });
-}
+      .enter()
+      .append('g');
 
-function checkIfMobile () {
-  return window.innerWidth < 899
+    circleGroup.each(function(d,i) {
+        for (var k = 0; k < d.doses; k++) {
+          // console.log(y(Math.floor(k / cols)))
+          d3.select(this).append('circle')
+            .attr('cx', x(k % cols) + radius)
+            .attr('cy', y(Math.floor(k / cols)) + radius)
+            .attr('class', function(d,i) { return k >= (d.doses - d.executions) ? "circle execution" : "circle" })
+            .attr('r', radius)
+        }
+    })
+  });
 }

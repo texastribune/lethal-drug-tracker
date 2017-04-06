@@ -43,6 +43,9 @@
       <span class="execution--num">{{ context.currentExecutions }}</span> scheduled executions
     </div>
 
+    <div id="dot-graphic" class="log"></div>
+
+
     <div class="log">
       <h4 class="log--title">Future inventory changes</h4>
       {{ future_log(context.futureLog) }}
@@ -53,8 +56,6 @@
       {{ past_log(context.pastLog) }}
     </div>
   </div>
-
-  <div id="dot-graphic" class="log"></div>
 
   <div class="prose">
     {{ prose(context.prose) }}

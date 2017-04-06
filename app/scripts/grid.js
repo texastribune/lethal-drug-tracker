@@ -8,17 +8,10 @@ export default function gridMaker() {
   var container = d3.select('#dot-graphic')
   var containerWidth = document.getElementById('dot-graphic').offsetWidth;
 
-  var colorScale = { base: d3.color('rgba(204, 186, 165, 1)'), scale: [] }
-
   var width = containerWidth
-  var height = containerWidth
 
   var x = d3.scaleBand()
   var y = d3.scaleBand()
-
-  var svg = container.append('svg')
-      .attr('width', width)
-      .attr('height', height)
 
   var jsonURL = window.LINE_JSON
 
@@ -32,12 +25,19 @@ export default function gridMaker() {
     dataSet.doses = +dataSet.doses;
     dataSet.executions = +dataSet.executions;
 
-    var sideLength = getSquareSizing(width, height, dataSet.doses)
-
+    var sideLength = getSquareSizing(width, width, dataSet.doses)
     var cols = Math.round(width / sideLength)
-    var rows = Math.round(height / sideLength)
+    var rows = Math.ceil(dataSet.doses / cols)
+
+    // figuring out how the height of the svg should be based on the number of
+    // dots and the num of colums
+    var height = (rows * width) / cols
 
     var padding = 0.25
+
+    var svg = container.append('svg')
+        .attr('width', width)
+        .attr('height', height)
 
     x.domain(d3.range(cols))
       .range([0, width])
@@ -54,11 +54,10 @@ export default function gridMaker() {
     var circleGroup = svg.selectAll('g')
       .data(data)
       .enter()
-      .append('g');
+      .append('g')
 
     circleGroup.each(function(d,i) {
         for (var k = 0; k < d.doses; k++) {
-          // console.log(y(Math.floor(k / cols)))
           d3.select(this).append('circle')
             .attr('cx', x(k % cols) + radius)
             .attr('cy', y(Math.floor(k / cols)) + radius)

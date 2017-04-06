@@ -1,4 +1,7 @@
 //styles for main graphic
+$doses: white;
+$executions: red;
+
 .graphic {
   margin-bottom: 2.5rem;
 
@@ -6,12 +9,14 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: $doses;
     text-align: center;
   }
 
   .executions {
     font-size: 1.75rem;
     text-align: center;
+    color: $executions;
   }
 }
 
@@ -83,9 +88,9 @@
 }
 
 .circle {
-  fill: yellow;
+  fill: $doses;
 
   &.execution {
-    fill: red;
+    fill: $executions;
   }
 }

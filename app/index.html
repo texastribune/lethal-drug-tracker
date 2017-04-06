@@ -54,6 +54,8 @@
     </div>
   </div>
 
+  <div id="dot-graphic" class="log"></div>
+
   <div class="prose">
     {{ prose(context.prose) }}
   </div>
@@ -68,6 +70,7 @@
 {% endblock content %}
 
 {% block scripts %}
+<script>window.LINE_JSON = "{{ static('assets/data/story.json') }}"</script>
 {{ super() }}
 <script src="{{ static('scripts/main.js') }}"></script>
 {% endblock scripts %}

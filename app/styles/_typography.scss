@@ -89,7 +89,7 @@
 // body copy. Typically you'll be applying this to each <p> tag directly, NOT
 // to the body copy's container. This makes it easier to float things around
 // individual paragraphs.
-.copy {
+.prose .copy {
   font-family: $font-serif;
   font-size: 1.125rem;
   line-height: 1.5;

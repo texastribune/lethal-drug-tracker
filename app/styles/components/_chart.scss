@@ -1,0 +1,89 @@
+$grid-gray: #888;
+
+.chart {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 40rem;
+
+  .circle {
+    stroke-width: 1;
+    stroke: $grid-gray;
+
+    &.add {
+      fill: $add;
+    }
+
+    &.execution {
+      fill: $execution;
+    }
+
+    &.expire {
+      fill: $expire;
+    }
+
+    &.return {
+      fill: $expire;
+    }
+  }
+}
+
+.axis {
+  .domain {
+    stroke: $color-primary;
+  }
+
+  .range {
+    stroke: $grid-gray;
+  }
+
+  .tick {
+
+    text {
+      fill: $grid-gray;
+    }
+
+    line {
+      stroke: $grid-gray;
+    }
+  }
+}
+
+.line {
+  stroke: $color-offwhite;
+  stroke-width: 3px;
+  fill: none;
+}
+
+.legend {
+  text-align: center;
+  line-height: 1.4rem;
+
+  &--item {
+    color: $grid-gray;
+    display: inline-block;
+    font-size: .875rem;
+    padding-right: .75rem;
+  }
+
+  i {
+    border-radius: .75rem;
+    display: inline-block;
+    height: .75rem;
+    margin-right: .25rem;
+    width: .75rem;
+
+    &.expire {
+      background-color: $expire;
+    }
+
+    &.add {
+      background-color: $add;
+    }
+
+    &.execution {
+      background-color: $execution;
+    }
+  }
+}

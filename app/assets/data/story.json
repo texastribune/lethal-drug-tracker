@@ -1,0 +1,139 @@
+{
+  "headline": "How many doses of lethal injection drugs does Texas have?",
+  "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
+  "lastDate": "2017-04-01",
+  "currentDose": "19",
+  "currentExecutions": "6",
+  "pastLog": [
+    {
+      "dose": "-8",
+      "type": "expire",
+      "date": "2017-03-31"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-03-07",
+      "name": "Rolando Ruiz"
+    },
+    {
+      "dose": "+10",
+      "type": "add",
+      "date": "2017-02-02"
+    }
+  ],
+  "futureLog": [
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-04-12",
+      "name": "Paul Storey"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-05-16",
+      "name": "Tilon Carter"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-05-24",
+      "name": "Juan Castillo"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-06-28",
+      "name": "Steven Long"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-07-19",
+      "name": "Kosoul Chanthakoummane"
+    },
+    {
+      "dose": "-9",
+      "type": "expire",
+      "date": "2017-07-20"
+    },
+    {
+      "dose": "-10",
+      "type": "expire",
+      "date": "2018-01-22"
+    }
+  ],
+  "prose": [
+    {
+      "type": "text",
+      "value": "Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
+    },
+    {
+      "type": "text",
+      "value": "Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection.Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
+    },
+    {
+      "type": "text",
+      "value": "Some paragraphs about evergreen info on Texas lethal injection.Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
+    }
+  ],
+  "chart": [
+    {
+      "date": "2016-07-11",
+      "change": "return",
+      "total": "12"
+    },
+    {
+      "date": "2016-08-01",
+      "change": "add",
+      "total": "24"
+    },
+    {
+      "date": "2016-08-03",
+      "change": "return",
+      "total": "23"
+    },
+    {
+      "date": "2016-10-05",
+      "change": "execution",
+      "total": "22"
+    },
+    {
+      "date": "2016-10-31",
+      "change": "expire",
+      "total": "20"
+    },
+    {
+      "date": "2017-01-11",
+      "change": "execution",
+      "total": "19"
+    },
+    {
+      "date": "2017-01-26",
+      "change": "execution",
+      "total": "18"
+    },
+    {
+      "date": "2017-02-02",
+      "change": "add",
+      "total": "28"
+    },
+    {
+      "date": "2017-03-07",
+      "change": "execution",
+      "total": "27"
+    },
+    {
+      "date": "2017-03-31",
+      "change": "expire",
+      "total": "19"
+    }
+  ],
+  "notes": [
+    {
+      "type": "text",
+      "value": "Additional design by Ben Hasson and Emily Albracht."
+    }
+  ]
+}

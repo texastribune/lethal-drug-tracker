@@ -58,8 +58,16 @@
     {{ prose(context.prose) }}
   </div>
 
+  <div id="step-chart" class="chart">
+    <ul class="legend">
+      <li class="legend--item"><i class="expire"></i>Doses expired</li>
+      <li class="legend--item"><i class="add"></i>Doses added</li>
+      <li class="legend--item"><i class="execution"></i>Execution</li>
+    </ul>
+  </div>
+
   <div class="notes">
-    <p>Additional design by Ben Hasson and Emily Albracht.</p>
+    <p>{{ prose(context.notes) }}</p>
   </div>
 
 
@@ -68,6 +76,7 @@
 {% endblock content %}
 
 {% block scripts %}
+<script>window.LINE_JSON = "{{ static('assets/data/story.json') }}"</script>
 {{ super() }}
 <script src="{{ static('scripts/main.js') }}"></script>
 {% endblock scripts %}

@@ -1,0 +1,15 @@
+{% macro buildDots(data) %}
+{% for expiration in data %}
+  <div class="expiration">
+    <h4 class="expiration--title">Expires {{ apFormatDate(expiration.expires) }}</h4>
+    {% for i in range(0, expiration.doses) %}
+      <div class="dose-dot {%if i < expiration.executions.length %}execution{% endif %}">
+        {%if i < expiration.executions.length %}
+          <div class="dot-info name">{{ expiration.executions[i].firstName }} <span>{{ expiration.executions[i].lastName }}</span></div>
+          <div class="dot-info date">{{ apFormatDateNOYR(expiration.executions[i].date) }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+{% endmacro %}

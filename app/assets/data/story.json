@@ -1,9 +1,48 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2017-04-01",
+  "lastDate": "2017-04-11",
   "currentDose": "19",
-  "currentExecutions": "6",
+  "currentExecutions": "5",
+  "dots": [
+    {
+      "expires": "2017-07-20",
+      "doses": "9",
+      "executions": [
+        {
+          "firstName": "Tilon",
+          "lastName": "Carter",
+          "date": "2017-05-16"
+        },
+        {
+          "firstName": "Juan",
+          "lastName": "Castillo",
+          "date": "2017-05-24"
+        },
+        {
+          "firstName": "Steven",
+          "lastName": "Long",
+          "date": "2017-06-28"
+        },
+        {
+          "firstName": "Kosoul",
+          "lastName": "Chanthakoummane",
+          "date": "2017-07-19"
+        }
+      ]
+    },
+    {
+      "expires": "2018-01-18",
+      "doses": "10",
+      "executions": [
+        {
+          "firstName": "Taichin",
+          "lastName": "Preyor",
+          "date": "2017-07-27"
+        }
+      ]
+    }
+  ],
   "pastLog": [
     {
       "dose": "-8",
@@ -20,48 +59,6 @@
       "dose": "+10",
       "type": "add",
       "date": "2017-02-02"
-    }
-  ],
-  "futureLog": [
-    {
-      "dose": "-1",
-      "type": "execution",
-      "date": "2017-04-12",
-      "name": "Paul Storey"
-    },
-    {
-      "dose": "-1",
-      "type": "execution",
-      "date": "2017-05-16",
-      "name": "Tilon Carter"
-    },
-    {
-      "dose": "-1",
-      "type": "execution",
-      "date": "2017-05-24",
-      "name": "Juan Castillo"
-    },
-    {
-      "dose": "-1",
-      "type": "execution",
-      "date": "2017-06-28",
-      "name": "Steven Long"
-    },
-    {
-      "dose": "-1",
-      "type": "execution",
-      "date": "2017-07-19",
-      "name": "Kosoul Chanthakoummane"
-    },
-    {
-      "dose": "-9",
-      "type": "expire",
-      "date": "2017-07-20"
-    },
-    {
-      "dose": "-10",
-      "type": "expire",
-      "date": "2018-01-22"
     }
   ],
   "prose": [
@@ -130,10 +127,5 @@
       "total": "19"
     }
   ],
-  "notes": [
-    {
-      "type": "text",
-      "value": "Additional design by Ben Hasson and Emily Albracht."
-    }
-  ]
+  "credit": "Additional design by Emily Albracht and Ben Hasson."
 }

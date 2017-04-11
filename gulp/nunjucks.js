@@ -102,6 +102,31 @@ env.addGlobal('apFormatDate', (input) => {
   return `${month} ${dayOfMonth}, ${year}`;
 });
 
+//jolie added to have expiration style date-fns
+const EXP_MONTHS = new Map([
+  [0, 'Jan'],
+  [1, 'Feb'],
+  [2, 'Mar'],
+  [3, 'Apr'],
+  [4, 'May'],
+  [5, 'Jun'],
+  [6, 'Jul'],
+  [7, 'Aug'],
+  [8, 'Sep'],
+  [9, 'Oct'],
+  [10, 'Nov'],
+  [11, 'Dec']
+]);
+
+env.addGlobal('apFormatDateNOYR', (input) => {
+  const date = parse(input);
+
+  const month = EXP_MONTHS.get(date.getMonth());
+  const dayOfMonth = date.getDate();
+
+  return `${month} ${dayOfMonth}`;
+});
+
 /*
 Set up `journalize`.
  */

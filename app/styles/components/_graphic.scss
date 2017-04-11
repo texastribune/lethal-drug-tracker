@@ -1,6 +1,9 @@
+$orange: rgb(255, 99, 71);
+
 //styles for main graphic
 .graphic {
   margin-bottom: 2.5rem;
+  font-family: 'Roboto', sans-serif;
 
   .doses {
     font-size: 3rem;
@@ -12,6 +15,106 @@
   .executions {
     font-size: 1.75rem;
     text-align: center;
+  }
+}
+
+//dots
+.expiration {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 36rem;
+  @include clearfix();
+
+  &--title {
+    padding-bottom: .25em;
+    border-bottom: 1px solid $color-offwhite;
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+}
+
+.dose-dot {
+  width: 31%;
+  height: 0; //js figures height
+  background: $color-offwhite;
+  border: .5rem solid darken($color-offwhite, 5);
+  margin-right: 3%;
+  margin-top: 1em;
+  position: relative;
+  border-radius: 100%;
+  float: left;
+
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   top: -.65em;
+  //   left: -.65em;
+  //   right: -.65em;
+  //   bottom: -.65em;
+  //   border-radius: 100%;
+  //   background: $color-offwhite;
+  //   z-index: -1;
+  // }
+
+  @include mq($until: s) {
+    &:nth-child(3n+4) {
+      margin-right: 0%;
+    }
+  }
+
+  @include mq($from: s, $until: l) {
+    width: 22%;
+    margin-right: 4%;
+
+    &:nth-child(4n+5) {
+      margin-right: 0%;
+    }
+  }
+
+  @include mq($from: l) {
+    width: 18%;
+    margin-right: 2%;
+
+    &:nth-child(5n+6) {
+      margin-right: 0%;
+    }
+  }
+
+  &.execution {
+    border: .5rem solid $orange;
+    color: $color-primary;
+    position: relative;
+
+    .dot-info {
+      position: absolute;
+      text-align: center;
+      padding: 5%;
+      margin: auto;
+      left: 0;
+      right: 0;
+
+      &.name {
+        // top: 15%;
+        font-size: .85rem;
+        line-height: 1.1;
+        word-wrap: break-word;
+        top: 50%;
+        transform: translateY(-70%);
+
+        span {
+          text-transform: uppercase;
+          display: block;
+        }
+      }
+
+      &.date {
+        bottom: 5%;
+        font-size: .7rem;
+        text-transform: uppercase
+      }
+    }
   }
 }
 

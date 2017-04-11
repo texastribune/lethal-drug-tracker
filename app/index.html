@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% import 'macros/shares.html' as shares %}
 {% from 'macros/prose.html' import prose %}
-{% from 'macros/logs.html' import past_log, future_log %}
+{% from 'macros/logs.html' import past_log %}
+{% from 'macros/dots.html' import buildDots %}
 
 {% set context = data.story %}
 
@@ -43,10 +44,10 @@
       <span class="execution--num">{{ context.currentExecutions }}</span> scheduled executions
     </div>
 
-    <div class="log">
-      <h4 class="log--title">Future inventory changes</h4>
-      {{ future_log(context.futureLog) }}
+    <div class="dots">
+      {{ buildDots(context.dots)}}
     </div>
+
 
     <div class="log">
       <h4 class="log--title">Recent inventory changes</h4>
@@ -67,7 +68,7 @@
   </div>
 
   <div class="notes">
-    <p>{{ prose(context.notes) }}</p>
+    <p>{{ context.credit }}</p>
   </div>
 
 

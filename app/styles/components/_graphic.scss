@@ -4,17 +4,41 @@ $orange: rgb(255, 99, 71);
 .graphic {
   margin-bottom: 2.5rem;
   font-family: 'Roboto', sans-serif;
+}
+
+.counts {
+  text-align: center;
+  margin-bottom: 3rem;
 
   .doses {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
+    @include clearfix();
+    margin: 1rem auto;
+    text-align: left;
+    width: 13rem;
+
+    &--num {
+      font-size: 5rem;
+      font-weight: bold;
+      letter-spacing: -5px;
+      float: left;
+      margin-right: .75rem;
+    }
+
+    &--label {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      padding-top: 1.55rem;
+    }
   }
 
   .executions {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     text-align: center;
+    text-transform: uppercase;
+    background-color: $orange;
+    color: $color-primary;
+    padding: .5rem;
+    display: inline-block;
   }
 }
 

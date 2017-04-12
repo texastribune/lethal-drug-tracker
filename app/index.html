@@ -37,11 +37,16 @@
   </header>
 
   <div class="graphic">
-    <div class="doses">
-      <span class="dose--num">{{ context.currentDose }}</span> doses
-    </div>
-    <div class="executions">
-      <span class="execution--num">{{ context.currentExecutions }}</span> scheduled executions
+
+    <div class="counts">
+      <div class="doses">
+        <div class="doses--num">{{ context.currentDose }}</div>
+        <div class="doses--label">doses remaining</div>
+      </div>
+
+      <div class="executions">
+        {% if context.currentExecutions < 10 %}0{% endif %}{{ context.currentExecutions }} scheduled executions
+      </div>
     </div>
 
     <div class="dots">

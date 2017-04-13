@@ -40,7 +40,7 @@
 
     <div class="counts">
       <div class="doses">
-        <div class="doses--num">{{ context.currentDose }}</div>
+        <div class="doses--num">{% if context.currentDose < 10 %}0{% endif %}{{ context.currentDose }}</div>
         <div class="doses--label">doses<br>remaining</div>
       </div>
 

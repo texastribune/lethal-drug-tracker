@@ -19,7 +19,9 @@
     {% for i in range(0, expiration.executions.length) %}
       <li>
         <span class="date">{{ expDateNOYR(expiration.executions[i].date) }}</span>
-        <span class="name">{{ expiration.executions[i].firstName }} <span class="uppercase">{{ expiration.executions[i].lastName }}</span></span>
+        <span class="name">
+          <a href="">{{ expiration.executions[i].firstName }} <span class="uppercase">{{ expiration.executions[i].lastName }}</span></a>
+        </span>
       </li>
     {% endfor %}
 {% endfor %}

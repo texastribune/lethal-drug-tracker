@@ -1,30 +1,29 @@
-$grid-gray: #888;
-
 .chart {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
   max-width: 40rem;
+  font-family: 'Roboto Mono', monospace;
 
   .circle {
     stroke-width: 1;
-    stroke: $grid-gray;
+    stroke: $color-gridgrey;
 
     &.add {
-      fill: $add;
+      fill: $color-add;
     }
 
     &.execution {
-      fill: $execution;
+      fill: $color-execution;
     }
 
     &.expire {
-      fill: $expire;
+      fill: $color-expire;
     }
 
     &.return {
-      fill: $expire;
+      fill: $color-expire;
     }
   }
 }
@@ -35,17 +34,18 @@ $grid-gray: #888;
   }
 
   .range {
-    stroke: $grid-gray;
+    stroke: $color-gridgrey;
   }
 
   .tick {
 
     text {
-      fill: $grid-gray;
+      fill: $color-gridgrey;
+      font-family: 'Roboto Mono', monospace;
     }
 
     line {
-      stroke: $grid-gray;
+      stroke: $color-gridgrey;
     }
   }
 }
@@ -61,7 +61,7 @@ $grid-gray: #888;
   line-height: 1.4rem;
 
   &--item {
-    color: #CCCCCC;
+    color: lighten($color-grey, 25);
     display: inline-block;
     font-size: .875rem;
     padding-right: .75rem;
@@ -75,15 +75,15 @@ $grid-gray: #888;
     width: .75rem;
 
     &.expire {
-      background-color: $expire;
+      background-color: $color-expire;
     }
 
     &.add {
-      background-color: $add;
+      background-color: $color-add;
     }
 
     &.execution {
-      background-color: $execution;
+      background-color: $color-execution;
     }
   }
 }

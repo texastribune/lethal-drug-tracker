@@ -102,7 +102,7 @@ env.addGlobal('apFormatDate', (input) => {
   return `${month} ${dayOfMonth}, ${year}`;
 });
 
-//jolie added to have expiration style date-fns
+//jolie added to have expiration style date
 const EXP_MONTHS = new Map([
   [0, 'Jan'],
   [1, 'Feb'],
@@ -118,7 +118,17 @@ const EXP_MONTHS = new Map([
   [11, 'Dec']
 ]);
 
-env.addGlobal('apFormatDateNOYR', (input) => {
+env.addGlobal('expDate', (input) => {
+  const date = parse(input);
+
+  const month = EXP_MONTHS.get(date.getMonth());
+  const dayOfMonth = date.getDate();
+  const year = date.getFullYear();
+
+  return `${month} ${dayOfMonth}/${year}`;
+});
+
+env.addGlobal('expDateNOYR', (input) => {
   const date = parse(input);
 
   const month = EXP_MONTHS.get(date.getMonth());

@@ -4,7 +4,7 @@
   <li class="log--item {{ item.type }}">
     <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
     <span class="log--desc">
-      <span class="log--date">{{ apFormatDate(item.date) }}</span>
+      <span class="log--date">{{ expDate(item.date) }}</span>
       {% if item.type == 'expire' %}
         Drugs <span class="log--underline">expired</span>
       {% elif item.type == 'add' %}
@@ -23,7 +23,7 @@
   <li class="log--item {{ item.type }}">
     <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
     <span class="log--desc">
-      <span class="log--date">{{ apFormatDate(item.date) }}</span>
+      <span class="log--date">{{ expDate(item.date) }}</span>
       {% if item.type == 'expire' %}
         Drugs set to <span class="log--underline">expire</span>
       {% elif item.type == 'execution' %}

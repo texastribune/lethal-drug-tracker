@@ -1,9 +1,7 @@
-$orange: rgb(255, 99, 71);
-
 //styles for main graphic
 .graphic {
   margin-bottom: 2.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .counts {
@@ -14,7 +12,7 @@ $orange: rgb(255, 99, 71);
     @include clearfix();
     margin: 1rem auto;
     text-align: left;
-    width: 13rem;
+    width: 14rem;
 
     &--num {
       font-size: 5rem;
@@ -35,7 +33,7 @@ $orange: rgb(255, 99, 71);
     font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
-    background-color: $orange;
+    background-color: $color-orange;
     color: $color-primary;
     padding: .5rem;
     display: inline-block;
@@ -44,10 +42,9 @@ $orange: rgb(255, 99, 71);
 
 //dots
 .expiration {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
   max-width: 36rem;
   @include clearfix();
 
@@ -107,7 +104,7 @@ $orange: rgb(255, 99, 71);
   }
 
   &.execution {
-    border: .5rem solid $orange;
+    border: .5rem solid $color-orange;
     color: $color-primary;
     position: relative;
 
@@ -150,7 +147,10 @@ $orange: rgb(255, 99, 71);
   max-width: 30rem;
 
   &--title {
+    padding-bottom: .25em;
+    border-bottom: 1px solid $color-offwhite;
     text-transform: uppercase;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -158,32 +158,32 @@ $orange: rgb(255, 99, 71);
     @include clearfix;
     font-size: .925rem;
     line-height: 1.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
   }
 
   &--highlight {
-    padding: 0 .25rem;
+    padding: .1rem .25rem;
     display: block;
     float: left;
-    width: 5rem;
+    width: 6rem;
     position: absolute;
     text-align: center;
 
     .expire & {
-      background-color: #005ab3;
+      background-color: $color-expire;
     }
 
     .execution & {
-      background-color: #b30000;
+      background-color: $color-execution;
     }
 
     .add & {
-      background-color: #00b35a;
+      background-color: $color-add;
     }
   }
 
   &--desc {
-    margin-left: 5.5rem;
+    margin-left: 6.5rem;
     display: block;
   }
 
@@ -196,15 +196,15 @@ $orange: rgb(255, 99, 71);
 
   &--underline {
     .expire & {
-      border-bottom: 2px solid $expire;
+      border-bottom: 2px solid $color-expire;
     }
 
     .execution & {
-      border-bottom: 2px solid $execution;
+      border-bottom: 2px solid $color-execution;
     }
 
     .add & {
-      border-bottom: 2px solid $add;
+      border-bottom: 2px solid $color-add;
     }
   }
 }

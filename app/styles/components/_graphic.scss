@@ -6,7 +6,7 @@
 
 .counts {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   .doses {
     @include clearfix();
@@ -133,7 +133,16 @@
       &.date {
         bottom: 5%;
         font-size: .7rem;
-        text-transform: uppercase
+        text-transform: uppercase;
+
+        .execution-label {
+          display: none;
+          font-size: .6rem;
+
+          .first & {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -205,6 +214,35 @@
 
     .add & {
       border-bottom: 2px solid $color-add;
+    }
+  }
+}
+
+//change legend from chart
+.dots .legend {
+  margin-bottom: 2rem;
+  &--item {
+    color: lighten($color-grey, 30);
+
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
+
+  i {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    vertical-align: sub;
+
+    &.dose {
+      background-color: $color-offwhite;
+      border: .2rem solid darken($color-offwhite, 10);
+    }
+
+    &.execution {
+      background-color: $color-offwhite;
+      border: .2rem solid $color-orange;
     }
   }
 }

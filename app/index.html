@@ -2,7 +2,7 @@
 {% import 'macros/shares.html' as shares %}
 {% from 'macros/prose.html' import prose %}
 {% from 'macros/logs.html' import past_log %}
-{% from 'macros/dots.html' import buildDots %}
+{% from 'macros/dots.html' import buildDots, scheduledExecutions %}
 
 {% set context = data.story %}
 
@@ -36,12 +36,12 @@
     </div> -->
   </header>
 
-  <div class="graphic">
+  <div class="display">
 
     <div class="counts">
       <div class="doses">
         <div class="doses--num">{{ context.currentDose }}</div>
-        <div class="doses--label">doses remaining</div>
+        <div class="doses--label">doses<br>remaining</div>
       </div>
 
       <div class="executions">
@@ -49,8 +49,15 @@
       </div>
     </div>
 
-    <div class="dots">
-      {{ buildDots(context.dots)}}
+    <div class="graphic">
+      <div class="dots">
+        {{ buildDots(context.dots)}}
+      </div>
+
+      <div class="executions-list">
+        <h4 class="graphic-title">Scheduled executions</h4>
+        {{ scheduledExecutions(context.dots) }}
+      </div>
     </div>
 
 

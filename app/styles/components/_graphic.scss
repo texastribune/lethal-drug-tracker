@@ -12,31 +12,49 @@
     @include clearfix();
     margin: 1rem auto;
     text-align: left;
-    width: 14rem;
+    width: 11rem;
+
+    @include mq($from: s) {
+      width: 14rem;
+    }
 
     &--num {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: bold;
       letter-spacing: -5px;
       float: left;
       margin-right: .75rem;
+
+      @include mq($from: s) {
+        font-size: 5rem;
+      }
     }
 
     &--label {
-      font-size: 1.3rem;
-      line-height: 1.5rem;
-      padding-top: 1.55rem;
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+      padding-top: 1.35rem;
+
+      @include mq($from: s) {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        padding-top: 1.55rem;
+      }
     }
   }
 
   .executions {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-align: center;
     text-transform: uppercase;
     background-color: $color-orange;
     color: $color-primary;
     padding: .5rem;
     display: inline-block;
+
+    @include mq($from: s) {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -117,12 +135,15 @@
       right: 0;
 
       &.name {
-        // top: 15%;
-        font-size: .85rem;
+        font-size: .75rem;
         line-height: 1.1;
         word-wrap: break-word;
-        top: 50%;
+        top: 45%;
         transform: translateY(-70%);
+
+        @include mq($from: s) {
+          font-size: .85rem;
+        }
 
         span {
           text-transform: uppercase;
@@ -165,9 +186,13 @@
 
   &--item {
     @include clearfix;
-    font-size: .925rem;
+    font-size: .825rem;
     line-height: 1.2rem;
     margin-bottom: .75rem;
+
+    @include mq($from: s) {
+      font-size: .925rem;
+    }
   }
 
   &--highlight {

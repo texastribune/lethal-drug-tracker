@@ -1,5 +1,9 @@
 .article-header {
-  margin-bottom: $gutter-double;
+  margin-bottom: $gutter;
+
+  @include mq($from: s) {
+    margin-bottom: $gutter-double;
+  }
 }
 
 // The article's title.

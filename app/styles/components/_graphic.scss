@@ -61,6 +61,7 @@
 .graphic {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 
   .graphic-title {
     padding-bottom: .25em;
@@ -70,8 +71,7 @@
   }
 
   .dots {
-    flex: 2;
-    padding-right: 3rem;
+    flex: 0 0 100%;
 
     .dose-dot {
       width: 3em;
@@ -90,12 +90,22 @@
         position: relative;
       }
     }
+
+    @include mq($from: m) {
+      flex: 2;
+      padding-right: 3rem;
+    }
   }
 
   .executions-list {
-    flex: 1;
-    margin-top: 2.3rem;
+    flex: 0 0 100%;
+    margin-bottom: $gutter-double;
 
+    @include mq($from: m) {
+      flex: 1;
+      margin-top: 2.3rem;
+      margin-bottom: 0;
+    }
 
     .graphic-title {
       background-color: $color-orange;
@@ -118,7 +128,7 @@
         font-size: .75rem;
         line-height: 1.3rem;
         color: lighten($color-grey, 25);
-        flex: .85;
+        flex: .75;
       }
 
       .name {
@@ -186,8 +196,12 @@
   }
 
   &--desc {
-    flex: 6;
+    flex: 3;
     margin-left: .5rem;
+
+    @include mq($from: m) {
+      flex: 6;
+    }
   }
 
   &--date {
@@ -219,10 +233,6 @@
 
   &--item {
     color: lighten($color-grey, 30);
-
-    &:first-child {
-      margin-right: 2rem;
-    }
   }
 
   i {

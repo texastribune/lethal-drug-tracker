@@ -12,7 +12,7 @@ $color-execution: #b30000;
 $color-orange: #ff8521;
 $color-darkteal: #162828;
 $color-offwhite: #f6f4f2;
-$color-gridgrey: #888;
+$color-gridgrey: #999;
 
 $color-tribune-yellow: hsl(46, 100%, 50%);
 $color-tribune-blue: hsl(193, 36%, 50%);
@@ -61,7 +61,7 @@ $mq-breakpoints: (
   l: 992px,
   xl: 1200px,
 
-  header-break: 840px,
+  header-break: 640px,
   footer-break: 850px
 );
 

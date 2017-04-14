@@ -1,35 +1,19 @@
 {% macro past_log(data) %}
 <ul class="log--list">
   {% for item in data %}
-  <li class="log--item {{ item.type }}">
+  <li class="log--item {{ item.type }}{% if loop.index > 3 %} hidden{% endif %}" id="loop-{{ loop.index }}">
     <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
+    <span class="log--date">{{ apFormatDate(item.date) }}</span>
     <span class="log--desc">
-      <span class="log--date">{{ expDate(item.date) }}</span>
       {% if item.type == 'expire' %}
         Drugs <span class="log--underline">expired</span>
       {% elif item.type == 'add' %}
-        Drugs <span class="log--underline">added</span> to inventroy
+        Drugs <span class="log--underline">added</span> to inventory
       {% elif item.type == 'execution' %}
         <span class="log--underline">Execution</span> of {{ item.name }}
       {% endif %}
     </span>
   {% endfor %}
 </ul>
-{% endmacro %}
-
-{% macro future_log(data) %}
-<ul class="log--list">
-  {% for item in data %}
-  <li class="log--item {{ item.type }}">
-    <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
-    <span class="log--desc">
-      <span class="log--date">{{ expDate(item.date) }}</span>
-      {% if item.type == 'expire' %}
-        Drugs set to <span class="log--underline">expire</span>
-      {% elif item.type == 'execution' %}
-        Scheduled <span class="log--underline">execution</span> of {{ item.name }}
-      {% endif %}
-    </span>
-  {% endfor %}
-</ul>
+<div id="more-log" class="more-button">See More</div>
 {% endmacro %}

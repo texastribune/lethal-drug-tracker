@@ -2,31 +2,35 @@
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
   "lastDate": "2017-04-11",
-  "currentDose": "19",
+  "currentDose": "18",
   "currentExecutions": "5",
   "dots": [
     {
       "expires": "2017-07-20",
-      "doses": "9",
+      "doses": "8",
       "executions": [
         {
           "firstName": "Tilon",
           "lastName": "Carter",
+          "id": "999517",
           "date": "2017-05-16"
         },
         {
           "firstName": "Juan",
           "lastName": "Castillo",
+          "id": "999502",
           "date": "2017-05-24"
         },
         {
           "firstName": "Steven",
           "lastName": "Long",
+          "id": "999514",
           "date": "2017-06-28"
         },
         {
           "firstName": "Kosoul",
           "lastName": "Chanthakoummane",
+          "id": "999529",
           "date": "2017-07-19"
         }
       ]
@@ -38,6 +42,7 @@
         {
           "firstName": "Taichin",
           "lastName": "Preyor",
+          "id": "999494",
           "date": "2017-07-27"
         }
       ]
@@ -52,6 +57,12 @@
     {
       "dose": "-1",
       "type": "execution",
+      "date": "2017-03-14",
+      "name": "James Bigby"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
       "date": "2017-03-07",
       "name": "Rolando Ruiz"
     },
@@ -59,9 +70,70 @@
       "dose": "+10",
       "type": "add",
       "date": "2017-02-02"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-01-26",
+      "name": "Terry Edwards"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-01-11",
+      "name": "Christopher Wilkins"
+    },
+    {
+      "dose": "-2",
+      "type": "expire",
+      "date": "2016-10-31"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2016-10-05",
+      "name": "Barney Fuller"
+    },
+    {
+      "dose": "+12",
+      "type": "add",
+      "date": "2016-08-01"
+    },
+    {
+      "dose": "-10",
+      "type": "expire",
+      "date": "2016-07-11"
     }
   ],
   "prose": [
+    {
+      "type": "text",
+      "value": "things to mention (no order yet):"
+    },
+    {
+      "type": "text",
+      "value": "* secrecy in providers"
+    },
+    {
+      "type": "text",
+      "value": "* history of injection in TX"
+    },
+    {
+      "type": "text",
+      "value": "* pentobarbital - current protocol is 100 mL of solution containing 5 grams of Pento; must have a backup: started and saline flows through “ONLY AFTER” that can witnesses come in. After statement, drugs pushed followed by more saline."
+    },
+    {
+      "type": "text",
+      "value": "* comparison to rest of nation"
+    },
+    {
+      "type": "text",
+      "value": "* constant work to find supply"
+    },
+    {
+      "type": "text",
+      "value": "* how we’re getting this data through open records requests"
+    },
     {
       "type": "text",
       "value": "Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."

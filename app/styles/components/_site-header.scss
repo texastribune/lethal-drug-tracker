@@ -30,7 +30,7 @@
 .site-header-wrapper {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: to-rem(1300);
   padding-bottom: $gutter-half;
@@ -38,10 +38,6 @@
   padding-right: $gutter-half;
   padding-top: $gutter-half;
   width: 100%;
-
-  @include mq($from: header-break) {
-    justify-content: space-between;
-  }
 }
 
 .site-header-logo {
@@ -69,13 +65,13 @@
 
   @include mq($from: header-break) {
     display: flex;
-    margin-left: $gutter-double;
+    margin-right: $gutter;
   }
 
   ul {
     align-items: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     white-space: nowrap;
     width: 100%;
   }
@@ -90,12 +86,41 @@
     line-height: 1;
     text-decoration: none;
 
-    &.donate {
+    &:hover {
       color: $color-text-link;
     }
-
-    &:hover {
-      color: $color-tribune-yellow;
-    }
   }
+}
+
+.socials {
+  color: transparentize($color-white, .15);
+  filter: drop-shadow(1px 1px 1px transparentize($color-primary, .5));
+  text-align: right;
+}
+
+.socials__link {
+  color: transparentize($color-white, .15);
+  margin-right: $gutter * .75;
+  text-decoration: none;
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+}
+
+.icon-facebook:active, .icon-facebook:hover {
+  .socials__link & {
+    color: $color-facebook;
+  }
+}
+
+.icon-twitter:active, .icon-twitter:hover {
+  .socials__link & {
+    color: $color-twitter;
+  }
+}
+
+.socials .icon {
+  font-size: 1.35rem;
+  vertical-align: middle;
 }

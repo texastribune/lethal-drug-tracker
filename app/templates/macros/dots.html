@@ -1,21 +1,28 @@
 {% macro buildDots(data) %}
 <ul class="legend">
-  <li class="legend--item"><i class="dose"></i> = 01 dose</li>
+  <li class="legend--item"><i class="dose"></i> = one dose</li>
   <li class="legend--item"><i class="execution"></i> = scheduled execution</li>
 </ul>
 {% for expiration in data %}
   <div class="expiration {% if loop.first %}first{% endif %}">
-    <h4 class="expiration--title">Drugs expire {{ expDate(expiration.expires) }}</h4>
+    <h4 class="graphic-title">{% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s{% endif %} expire {{ apFormatDate(expiration.expires) }}</h4>
     {% for i in range(0, expiration.doses) %}
       <div class="dose-dot {%if i < expiration.executions.length %}execution{% endif %}">
-        {%if i < expiration.executions.length %}
-          <div class="dot-info name">{{ expiration.executions[i].firstName }} <span>{{ expiration.executions[i].lastName }}</span></div>
-          <div class="dot-info date">{% if i == 0  %}<span class="execution-label">Execution</span>{% endif %}
-            {{ expDateNOYR(expiration.executions[i].date) }}
-          </div>
-        {% endif %}
       </div>
     {% endfor %}
   </div>
+{% endfor %}
+{% endmacro %}
+
+{% macro scheduledExecutions(data) %}
+{% for expiration in data %}
+    {% for i in range(0, expiration.executions.length) %}
+      <li>
+        <span class="date">{{ expDateNOYR(expiration.executions[i].date) }}</span>
+        <span class="name">
+          <a href="https://apps.texastribune.org/death-row/#id{{ expiration.executions[i].id }}">{{ expiration.executions[i].firstName }} <span class="uppercase">{{ expiration.executions[i].lastName }}</span></a>
+        </span>
+      </li>
+    {% endfor %}
 {% endfor %}
 {% endmacro %}

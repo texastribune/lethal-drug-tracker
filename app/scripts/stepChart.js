@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 //d3 step chart
 export default function buildChart() {
 
-  d3.selectAll('svg').remove();
+  d3.selectAll('#step-chart svg').remove();
 
   var containerWidth = document.getElementById('step-chart').offsetWidth;
 
@@ -77,7 +77,7 @@ export default function buildChart() {
 
     // text and position for y axis label
     var title = lastYTick.append('text')
-      .attr('x', '1.75rem')
+      .attr('x', '1.85rem')
       .attr('dy', '.23rem')
       .text('doses');
 

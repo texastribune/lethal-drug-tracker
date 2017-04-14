@@ -20,7 +20,7 @@
       <li>
         <span class="date">{{ expDateNOYR(expiration.executions[i].date) }}</span>
         <span class="name">
-          <a href="">{{ expiration.executions[i].firstName }} <span class="uppercase">{{ expiration.executions[i].lastName }}</span></a>
+          <a href="https://apps.texastribune.org/death-row/#id{{ expiration.executions[i].id }}">{{ expiration.executions[i].firstName }} <span class="uppercase">{{ expiration.executions[i].lastName }}</span></a>
         </span>
       </li>
     {% endfor %}

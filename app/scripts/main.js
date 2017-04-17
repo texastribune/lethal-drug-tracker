@@ -1,15 +1,18 @@
-'use strict';
-
+import './utils/polyfills';
+import { h, render } from 'preact';
 import buildChart from './stepChart';
 import onDocumentReady from './utils/on-document-ready';
 import debounce from './utils/debounce'
+import RelatedStories from './related-stories';
 
 onDocumentReady(makeDots);
 onDocumentReady(buildChart);
-// onDocumentReady(showLog);
+
 document.getElementById('more-log').addEventListener('click', showLog);
 window.addEventListener('resize', debounce(makeDots, 200));
 window.addEventListener('resize', debounce(buildChart, 300));
+const relatedStories = document.querySelector('#related-stories-container');
+onDocumentReady(loadRelatedStories);
 
 //makes dots the same height as width
 function makeDots() {
@@ -35,4 +38,18 @@ function showLog() {
   }
 
   moreButton.classList.add('hidden')
+}
+
+function loadRelatedStories () {
+  const url = 'https://www.texastribune.org/api/content/?content_type=story,audio,video,pointer&amp;tag=subject-death-penalty&amp;tag!=object-tribcast&amp;fields=id,url,readable_pub_date,seo_headline,short_summary,lead_art&amp;limit=4&amp;format=json';
+
+  console.log(url);
+  render(
+    <RelatedStories
+      src={url}
+      numStories=2
+      isColumn
+    />,
+    relatedStories
+  );
 }

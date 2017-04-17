@@ -25,15 +25,15 @@ function makeDots() {
     }
 }
 
-//show more past log
+// show more past log
 function showLog() {
   var logs = document.getElementsByClassName('log--item')
   var logLength = logs.length
   var moreButton = document.getElementById('more-log')
-  //get first hidden ID and start from there?
+  // get first hidden ID and start from there?
 
-  //how to get to show only some more?
-  for(var i=1; i <= logLength; i++) {
+  // how to get to show only some more?
+  for (var i=1; i <= logLength; i++) {
     document.getElementById('loop-'+i).classList.remove('hidden')
   }
 
@@ -47,7 +47,7 @@ function loadRelatedStories () {
   render(
     <RelatedStories
       src={url}
-      numStories=2
+      numStories={4}
       isColumn
     />,
     relatedStories

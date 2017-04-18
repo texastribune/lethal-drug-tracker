@@ -2,7 +2,7 @@
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
   "lastDate": "2017-04-17",
-  "facebook_text": "Filler facebook text",
+  "subhead": "With execution drugs in short supply around the nation and increasing secrecy among providers, the Texas Tribune is keeping track of movement in the state’s supply.",
   "currentDose": "18",
   "currentExecutions": "5",
   "dots": [
@@ -53,57 +53,78 @@
     {
       "dose": "-8",
       "type": "expire",
-      "date": "2017-03-31"
+      "date": "2017-03-31",
+      "total": "18"
     },
     {
       "dose": "-1",
       "type": "execution",
       "date": "2017-03-14",
-      "name": "James Bigby"
+      "name": "James Bigby",
+      "link": "https://www.texastribune.org/2017/03/14/fort-worth-man-set-death-killing-spree-included-infant/",
+      "total": "26"
     },
     {
       "dose": "-1",
       "type": "execution",
       "date": "2017-03-07",
-      "name": "Rolando Ruiz"
+      "name": "Rolando Ruiz",
+      "link": "https://www.texastribune.org/2017/03/07/texas-set-execute-triggerman-san-antonio-murder-hire-case/",
+      "total": "27"
     },
     {
       "dose": "+10",
       "type": "add",
-      "date": "2017-02-02"
+      "date": "2017-02-02",
+      "total": "28"
     },
     {
       "dose": "-1",
       "type": "execution",
       "date": "2017-01-26",
-      "name": "Terry Edwards"
+      "name": "Terry Edwards",
+      "link": "https://www.texastribune.org/2017/01/26/execution-delayed-man-convicted-double-murder/",
+      "total": "18"
     },
     {
       "dose": "-1",
       "type": "execution",
       "date": "2017-01-11",
-      "name": "Christopher Wilkins"
+      "name": "Christopher Wilkins",
+      "link": "https://www.texastribune.org/2017/01/11/first-texas-execution-year-set-murders-stemming-fa/",
+      "total": "19"
     },
     {
       "dose": "-2",
       "type": "expire",
-      "date": "2016-10-31"
+      "date": "2016-10-31",
+      "total": "20"
     },
     {
       "dose": "-1",
       "type": "execution",
       "date": "2016-10-05",
-      "name": "Barney Fuller"
+      "name": "Barney Fuller",
+      "link": "https://www.texastribune.org/2016/10/05/first-texas-execution-six-months-set-man-who-kille/",
+      "total": "22"
+    },
+    {
+      "dose": "-1",
+      "type": "return",
+      "date": "2016-08-03",
+      "total": "23"
     },
     {
       "dose": "+12",
       "type": "add",
-      "date": "2016-08-01"
+      "date": "2016-08-01",
+      "total": "24"
     },
     {
       "dose": "-10",
       "type": "expire",
-      "date": "2016-07-11"
+      "date": "2016-07-11",
+      "total": "12"
     }
   ],
   "prose": [
@@ -134,75 +155,6 @@
     {
       "type": "text",
       "value": "* how we’re getting this data through open records requests"
-    },
-    {
-      "type": "text",
-      "value": "Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
-    },
-    {
-      "type": "text",
-      "value": "Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection.Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
-    },
-    {
-      "type": "text",
-      "value": "Some paragraphs about evergreen info on Texas lethal injection.Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection. Some paragraphs about evergreen info on Texas lethal injection."
-    }
-  ],
-  "chart": [
-    {
-      "date": "2016-07-11",
-      "change": "return",
-      "total": "12"
-    },
-    {
-      "date": "2016-08-01",
-      "change": "add",
-      "total": "24"
-    },
-    {
-      "date": "2016-08-03",
-      "change": "return",
-      "total": "23"
-    },
-    {
-      "date": "2016-10-05",
-      "change": "execution",
-      "total": "22"
-    },
-    {
-      "date": "2016-10-31",
-      "change": "expire",
-      "total": "20"
-    },
-    {
-      "date": "2017-01-11",
-      "change": "execution",
-      "total": "19"
-    },
-    {
-      "date": "2017-01-26",
-      "change": "execution",
-      "total": "18"
-    },
-    {
-      "date": "2017-02-02",
-      "change": "add",
-      "total": "28"
-    },
-    {
-      "date": "2017-03-07",
-      "change": "execution",
-      "total": "27"
-    },
-    {
-      "date": "2017-03-14",
-      "change": "execution",
-      "total": "26"
-    },
-    {
-      "date": "2017-03-31",
-      "change": "expire",
-      "total": "18"
     }
   ],
   "credit": "Additional design by Emily Albracht and Ben Hasson."

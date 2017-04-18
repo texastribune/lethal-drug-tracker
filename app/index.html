@@ -20,17 +20,17 @@
   </header>
 
   <div class="display">
-
     <div class="counts">
       <div class="doses">
         <div class="doses--num">{% if context.currentDose < 10 %}0{% endif %}{{ context.currentDose }}</div>
         <div class="doses--label">doses<br>remaining</div>
       </div>
-
       <div class="executions">
         {% if context.currentExecutions < 10 %}0{% endif %}{{ context.currentExecutions }} scheduled executions
       </div>
     </div>
+
+    <p class="article-subhead">{{ context.subhead }}</p>
 
     <div class="graphic">
       <div class="dots">
@@ -56,7 +56,7 @@
 
   <div id="step-chart" class="chart">
     <ul class="legend">
-      <li class="legend--item"><i class="expire"></i>Doses expired</li>
+      <li class="legend--item"><i class="expire"></i>Doses expired/removed</li>
       <li class="legend--item"><i class="add"></i>Doses added</li>
       <li class="legend--item"><i class="execution"></i>Execution</li>
     </ul>

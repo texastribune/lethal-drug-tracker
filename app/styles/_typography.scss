@@ -65,6 +65,16 @@ a, a:visited {
   }
 }
 
+.article-subhead {
+  margin: $gutter-double auto;
+  line-height: 1.4;
+  color: lighten($color-gridgrey, 10);
+
+  @include mq($from: s) {
+    font-size: 1.1rem;
+  }
+}
+
 .article-shares {
   display: flex;
   flex-direction: row;

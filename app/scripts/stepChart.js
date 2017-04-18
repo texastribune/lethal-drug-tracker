@@ -50,7 +50,7 @@ export default function buildChart() {
 
   d3.json(jsonURL, function(error, data) {
 
-    data = data.chart;
+    data = data.pastLog.reverse();
 
     //Format data
     data.forEach(function(d) {
@@ -93,7 +93,7 @@ export default function buildChart() {
     svg.selectAll("circle")
       .data(data)
       .enter().append("svg:circle")
-      .attr('class', function(d) { return 'circle ' + d.change })
+      .attr('class', function(d) { return 'circle ' + d.type })
       .attr("cx", function(d) { return x(d.date) })
       .attr("cy", function(d) { return y(d.total) })
       .attr("r", 8);

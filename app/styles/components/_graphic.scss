@@ -127,7 +127,7 @@
         text-transform: uppercase;
         font-size: .75rem;
         line-height: 1.3rem;
-        color: lighten($color-grey, 25);
+        color: lighten($color-grey, 20);
         flex: .75;
       }
 
@@ -206,7 +206,7 @@
     flex: 1.3;
     font-size: .75rem;
     text-transform: uppercase;
-    color: lighten($color-grey, 25);
+    color: lighten($color-grey, 20);
     padding-left: 1rem;
   }
 
@@ -237,7 +237,7 @@
   margin-bottom: $gutter;
 
   &--item {
-    color: lighten($color-grey, 30);
+    color: lighten($color-grey, 20);
   }
 
   i {

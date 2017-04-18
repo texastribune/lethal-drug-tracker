@@ -5,14 +5,17 @@
     <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
     <span class="log--date">{{ apFormatDate(item.date) }}</span>
     <span class="log--desc">
-      {% if item.type == 'expire' %}
+      {% if item.type == 'return' %}
+        Drugs returned to supplier
+      {% elif item.type == 'expire' %}
         Drugs expired
       {% elif item.type == 'add' %}
         Drugs added to inventory
       {% elif item.type == 'execution' %}
-        Execution of <span class="log--underline"><a href="{{ item.link }}">{{ item.name }}</a></span>
+        Execution of {% if item.link %}<a class="log--underline" href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
       {% endif %}
     </span>
+  </li>
   {% endfor %}
 </ul>
 <div id="more-log" class="more-button">+ View More</div>

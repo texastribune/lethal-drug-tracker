@@ -47,13 +47,11 @@ function toggleLog() {
 
 function loadRelatedStories () {
   const url = 'https://www.texastribune.org/api/content/?content_type=story,audio,video,pointer&amp;tag=subject-death-penalty&amp;tag!=object-tribcast&amp;fields=id,url,readable_pub_date,seo_headline,short_summary,lead_art&amp;limit=4&amp;format=json';
-
-  console.log(url);
   render(
     <RelatedStories
       src={url}
       numStories={4}
-      isColumn
+      title={'More on the death penalty'}
     />,
     relatedStories
   );

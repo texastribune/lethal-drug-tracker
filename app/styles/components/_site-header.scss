@@ -96,6 +96,7 @@
   color: transparentize($color-white, .15);
   filter: drop-shadow(1px 1px 1px transparentize($color-primary, .5));
   text-align: right;
+  margin-right: $gutter-half;
 }
 
 .socials__link {

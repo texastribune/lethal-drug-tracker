@@ -96,7 +96,7 @@ export default function buildChart() {
       .attr('class', function(d) { return 'circle ' + d.change })
       .attr("cx", function(d) { return x(d.date) })
       .attr("cy", function(d) { return y(d.total) })
-      .attr("r", 6);
+      .attr("r", 8);
   });
 
 

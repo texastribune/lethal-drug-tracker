@@ -136,9 +136,7 @@
         line-height: 1.3rem;
       }
 
-      a, a:visited {
-        color: $color-offwhite;
-        text-decoration: none;
+      a {
         border-bottom: 2px solid $color-orange;
       }
     }
@@ -224,6 +222,13 @@
     .add & {
       border-bottom: 2px solid $color-add;
     }
+  }
+
+  .more-button {
+    font-size: .9rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 }
 

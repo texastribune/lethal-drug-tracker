@@ -8,7 +8,7 @@
 
   .circle {
     stroke-width: 1;
-    stroke: $color-gridgrey;
+    stroke: lighten($color-grey, 30);
 
     &.add {
       fill: $color-add;
@@ -52,7 +52,7 @@
 
 .line {
   stroke: $color-offwhite;
-  stroke-width: 3px;
+  stroke-width: 2px;
   fill: none;
 }
 
@@ -68,11 +68,13 @@
   }
 
   i {
-    border-radius: .75rem;
+    border-radius: 1rem;
     display: inline-block;
-    height: .75rem;
+    height: 1rem;
     margin-right: .25rem;
-    width: .75rem;
+    width: 1rem;
+    border: 1px solid lighten($color-grey, 30);
+    vertical-align: sub;
 
     &.expire {
       background-color: $color-expire;

@@ -8,7 +8,7 @@ import RelatedStories from './related-stories';
 onDocumentReady(makeDots);
 onDocumentReady(buildChart);
 
-document.getElementById('more-log').addEventListener('click', showLog);
+document.getElementById('more-log').addEventListener('click', toggleLog);
 window.addEventListener('resize', debounce(makeDots, 200));
 window.addEventListener('resize', debounce(buildChart, 300));
 const relatedStories = document.querySelector('#related-stories-container');
@@ -26,18 +26,23 @@ function makeDots() {
 }
 
 // show more past log
-function showLog() {
+function toggleLog() {
   var logs = document.getElementsByClassName('log--item')
   var logLength = logs.length
   var moreButton = document.getElementById('more-log')
-  // get first hidden ID and start from there?
 
-  // how to get to show only some more?
-  for (var i=1; i <= logLength; i++) {
-    document.getElementById('loop-'+i).classList.remove('hidden')
+  if(document.getElementById('loop-'+logLength).classList.contains('hidden')) {
+    for (var i=1; i <= logLength; i++) {
+      document.getElementById('loop-'+i).classList.remove('hidden')
+    }
+    moreButton.innerHTML = '- View Less'
+  } else {
+    for (var i=4; i <= logLength; i++) {
+      document.getElementById('loop-'+i).classList.add('hidden')
+    }
+    moreButton.innerHTML = '+ View More'
   }
 
-  moreButton.classList.add('hidden')
 }
 
 function loadRelatedStories () {

@@ -6,14 +6,14 @@
     <span class="log--date">{{ apFormatDate(item.date) }}</span>
     <span class="log--desc">
       {% if item.type == 'expire' %}
-        Drugs <span class="log--underline">expired</span>
+        Drugs expired
       {% elif item.type == 'add' %}
-        Drugs <span class="log--underline">added</span> to inventory
+        Drugs added to inventory
       {% elif item.type == 'execution' %}
-        <span class="log--underline">Execution</span> of {{ item.name }}
+        Execution of <span class="log--underline"><a href="{{ item.link }}">{{ item.name }}</a></span>
       {% endif %}
     </span>
   {% endfor %}
 </ul>
-<div id="more-log" class="more-button">See More</div>
+<div id="more-log" class="more-button">+ View More</div>
 {% endmacro %}

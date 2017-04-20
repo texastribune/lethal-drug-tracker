@@ -1,7 +1,6 @@
 .related-stories-container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: $gutter-double;
   max-width: 40rem;
 
   @include mq($from: l) {
@@ -11,12 +10,12 @@
 
 .section-sub-header {
   flex: 0 0 100%;
+  font-size: 1rem;
   letter-spacing: .03em;
   line-height: 1.2;
-  margin-bottom: .3125rem;
+  margin: $gutter-half 0;
   text-transform: uppercase;
   font-weight: bold;
-  color: lighten($color-gridgrey, 10);
 }
 
 .related-stories {
@@ -88,10 +87,14 @@
 
 .story-headline {
   font-family: $font-serif;
-  font-size: to-rem(18);
+  font-size: to-rem(16);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: $gutter-half;
+
+  @include mq($from: s) {
+    font-size: to-rem(18)
+  }
 }
 
 .story-byline {

@@ -4,10 +4,10 @@ a, a:visited {
 }
 
 .article-header {
-  margin-bottom: $gutter;
+  margin-bottom: $gutter-double;
 
   @include mq($from: s) {
-    margin-bottom: $gutter-double;
+    margin-bottom: 3.25rem;
   }
 }
 
@@ -66,11 +66,12 @@ a, a:visited {
 }
 
 .article-subhead {
-  margin: $gutter-double auto;
+  margin: $gutter auto 3.25rem;
   line-height: 1.4;
-  color: lighten($color-gridgrey, 10);
+  max-width: 40rem;
 
   .display & {
+    color: lighten($color-gridgrey, 10);
     @include mq($from: s) {
       font-size: 1.1rem;
     }
@@ -80,7 +81,6 @@ a, a:visited {
     margin: 1.25rem auto;
     font-size: 1.25rem;
     font-weight: bold;
-    max-width: 40rem;
     text-transform: uppercase;
     letter-spacing: .03em;
   }

@@ -23,7 +23,7 @@
     <div class="counts">
       <div class="doses">
         <div class="doses--num">{% if context.currentDose < 10 %}0{% endif %}{{ context.currentDose }}</div>
-        <div class="doses--label">doses<br>remaining</div>
+        <div class="doses--label">doses<br>in stock</div>
       </div>
       <div class="executions">
         {% if context.currentExecutions < 10 %}0{% endif %}{{ context.currentExecutions }} scheduled executions
@@ -65,9 +65,6 @@
   <div class="notes">
     <p>{{ context.credit }}</p>
   </div>
-
-  <div id="related-stories-container" class="related-stories-container"></div>
-
 </div>
 
 {% endblock content %}

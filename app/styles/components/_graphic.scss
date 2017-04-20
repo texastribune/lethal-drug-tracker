@@ -2,14 +2,14 @@
 .display {
   margin-bottom: $gutter-double;
   font-family: 'Roboto Mono', monospace;
-  max-width: 45rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .counts {
   text-align: center;
-  margin-bottom: $gutter-double;
+  margin-bottom: $gutter;
 
   .doses {
     @include clearfix();
@@ -103,17 +103,8 @@
 
     @include mq($from: m) {
       flex: 1;
-      margin-top: 2.3rem;
+      margin-top: 2.7rem;
       margin-bottom: 0;
-    }
-
-    .graphic-title {
-      background-color: $color-orange;
-      padding: .1rem .2rem;
-      line-height: 1.4rem;
-      color: $color-darkteal;
-      text-align: center;
-      border: 0;
     }
 
     li {
@@ -187,7 +178,6 @@
     padding: .1rem .25rem;
     flex: 1;
     text-align: center;
-    text-shadow: 0 0 1px $color-darkteal;
 
     .expire &, .return &, .remove & {
       background-color: $color-expire;
@@ -195,6 +185,8 @@
 
     .execution & {
       background-color: $color-execution;
+      color: $color-darkteal;
+      font-weight: bold;
     }
 
     .add & {

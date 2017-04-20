@@ -3,7 +3,7 @@ import { h } from 'preact';
 const Story = ({ seo_headline, short_summary, url, lead_art, readable_pub_date }) => {
   return (
     <article class="story">
-      <a class="story-link dim" href={url} target="_blank">
+      <a class="story-link dim" href={url}>
         <div class="story-media">
           <div class="story-art">
             <img src={lead_art.thumbnails.letterbox} />

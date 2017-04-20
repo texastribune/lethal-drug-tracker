@@ -1,10 +1,8 @@
 .site-header {
-  // background-color: $color-primary;
+  background-color: $color-primary;
   color: $color-offwhite;
   position: relative;
   width: 100%;
-  //jm changed for this story
-  background-color: $color-darkteal;
 }
 
 .site-header-container {
@@ -86,6 +84,10 @@
     line-height: 1;
     text-decoration: none;
 
+    &.donate {
+      color: $color-text-link;
+    }
+
     &:hover {
       color: $color-text-link;
     }
@@ -96,7 +98,10 @@
   color: transparentize($color-white, .15);
   filter: drop-shadow(1px 1px 1px transparentize($color-primary, .5));
   text-align: right;
-  margin-right: $gutter-half;
+
+  @include mq($from: m) {
+    margin-right: $gutter-half;
+  }
 }
 
 .socials__link {

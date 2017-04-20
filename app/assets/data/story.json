@@ -2,7 +2,7 @@
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
   "lastDate": "2017-04-21",
-  "subhead": "With execution drugs in short supply across the nation and increasing secrecy about providers, The Texas Tribune is keeping track of movement in the state’s supply.",
+  "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "currentDose": "18",
   "currentExecutions": "5",
   "dots": [
@@ -129,7 +129,7 @@
     },
     {
       "type": "text",
-      "value": "Since 1977, lethal injection has been the method for executing Texas criminals sentenced to death. But the drugs used in executions <a href=\"https://www.texastribune.org/2014/07/08/history-lethal-drug-use-texas/\">have changed over the years</a>, as the state has struggled to get a hold of life-ending doses."
+      "value": "Since 1977, lethal injection has been the method for executing Texas criminals sentenced to death. But the drugs used in executions <a href=\"https://www.texastribune.org/2014/07/08/history-lethal-drug-use-texas/\">have changed over the years</a>, as the state has struggled to get a hold of enough life-ending doses."
     },
     {
       "type": "text",
@@ -137,7 +137,7 @@
     },
     {
       "type": "text",
-      "value": "To promote transparency, The Texas Tribune has obtained the inventory supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected  through continuous open records requests, will be updated regularly with the current supply and recent changes to the state’s inventory."
+      "value": "To promote transparency, The Texas Tribune has obtained the inventory history and current supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected through continuous open records requests, will be updated regularly with the current supply and recent changes to the state’s inventory."
     },
     {
       "type": "text",
@@ -145,19 +145,19 @@
     },
     {
       "type": "text",
-      "value": "When these pharmacies’ names became public, the owners said they were being harassed, and they sometimes <a href=\"http://www.reuters.com/article/us-usa-execution-drug-idUSBRE9960W320131007\">asked for the drugs to be returned</a>. Texas refused, and the state Legislature <a href=\"https://www.texastribune.org/2015/05/19/bill-making-execution-drug-providers-secret-passes/\">passed a law in 2015</a> to maintain the privacy of any person involved in an execution, from the person who inserts the needle to the one who sells the drug."
+      "value": "When these pharmacies’ names became public, the owners said they were being harassed, and they sometimes <a href=\"http://www.reuters.com/article/us-usa-execution-drug-idUSBRE9960W320131007\">asked for the drugs to be returned</a>. Texas refused, and the state Legislature <a href=\"https://www.texastribune.org/2015/05/19/bill-making-execution-drug-providers-secret-passes/\">passed a law in 2015</a> to maintain the privacy of any person or business involved in an execution, from the person who inserts the needle to the company that sells the drug."
     },
     {
       "type": "text",
-      "value": "Since then, Texas seems to have had a steady supply of pentobarbital in stock for scheduled executions, faring better than some other states. In 2016, Pfizer, the last-remaining open-market execution drug manufacturer, <a href=\"https://www.nytimes.com/2016/05/14/us/pfizer-execution-drugs-lethal-injection.html?_r=0\">banned its products</a> from being used in executions."
+      "value": "Since then, Texas appears to have had a steady supply of pentobarbital in stock for scheduled executions, faring better than some other states. In 2016, Pfizer, the last-remaining open-market execution drug manufacturer, <a href=\"https://www.nytimes.com/2016/05/14/us/pfizer-execution-drugs-lethal-injection.html?_r=0\">banned its products</a> from being used in executions."
     },
     {
       "type": "text",
-      "value": "Now, many states that had regularly performed executions have halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited drugs or switched to use a controversial sedative, midazolam, which was the involved in two botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
+      "value": "Now, many states that had regularly performed executions have halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited supply of drugs or switched to using a controversial sedative, midazolam, which was the involved in two botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
     },
     {
       "type": "text",
-      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and [[[???link]]]later ruled that WHATEVER IS RULED."
+      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used by Texas in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and later ruled that WHATEVER IS RULED."
     }
   ],
   "credit": "Additional design by Emily Albracht and Ben Hasson."

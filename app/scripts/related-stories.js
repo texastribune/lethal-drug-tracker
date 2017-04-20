@@ -32,7 +32,7 @@ class RelatedStories extends Component {
     const title = this.props.title;
     const numStories = this.props.numStories;
 
-    const pointerUrl = 'https://www.texastribune.org/2017/04/13/for-transgender-texans-navigating-public-restrooms-already-complicated/';
+    const pointerUrl = 'https://www.texastribune.org/2017/04/21/heres-how-many-execution-drugs-texas-has-right-now/';
     const currentUrl = `${window.location.protocol}//${window.location.host}/${window.location.pathname}`;
 
     const renderedStories = stories.filter((story) => story.url !== currentUrl && story.url !== pointerUrl).slice(0, numStories).map((story) => {

@@ -9,10 +9,12 @@
         Drugs returned to supplier
       {% elif item.type == 'expire' %}
         Drugs expired
+      {% elif item.type == 'remove' %}
+          Drugs removed from stock
       {% elif item.type == 'add' %}
         Drugs added to inventory
       {% elif item.type == 'execution' %}
-        Execution of {% if item.link %}<a class="log--underline" href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+        Execution of {{ item.name }}{% if item.link %} <a class="log--underline link" href="{{ item.link }}">Read story</a>{% endif %}
       {% endif %}
     </span>
   </li>

@@ -77,11 +77,12 @@ a, a:visited {
   }
 
   .prose & {
-    margin-bottom: $gutter;
+    margin: 1.25rem auto;
     font-size: 1.25rem;
     font-weight: bold;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
+    max-width: 40rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
   }
 }
 

@@ -8,8 +8,8 @@ $color-white: hsl(0, 0%, 100%);
 //added for this specific app
 $color-add: #008990;
 $color-expire: #727a7a;
-$color-execution: #ff8521;
-$color-orange: #ff8521;
+$color-execution: #ff7707;//#ff8521;
+$color-orange: $color-execution; //#ff8521;
 $color-darkteal: #162828;
 $color-offwhite: #f6f4f2;
 $color-gridgrey: #bbb;

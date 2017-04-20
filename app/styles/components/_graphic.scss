@@ -137,7 +137,15 @@
       }
 
       a {
-        border-bottom: 2px solid $color-orange;
+        border-bottom: 1px solid $color-orange;
+        box-shadow: inset 0 -1px 0 0 $color-execution;
+
+        &:active,
+        &:hover {
+          border-bottom-color: darken($color-orange, 15);
+          box-shadow: inset 0 -2px 0 0 darken($color-orange, 15);
+          transition: all 0.8s $curve-standard;
+        }
       }
     }
   }
@@ -179,8 +187,9 @@
     padding: .1rem .25rem;
     flex: 1;
     text-align: center;
+    text-shadow: 0 0 1px $color-darkteal;
 
-    .expire & {
+    .expire &, .return &, .remove & {
       background-color: $color-expire;
     }
 
@@ -200,6 +209,14 @@
     @include mq($from: m) {
       flex: 6;
     }
+
+    .link {
+      font-size: .7rem;
+      font-style: italic;
+      color: $color-gridgrey;
+      text-transform: uppercase;
+      letter-spacing: .03rem;
+    }
   }
 
   &--date {
@@ -211,16 +228,16 @@
   }
 
   &--underline {
-    .expire & {
-      border-bottom: 2px solid $color-expire;
-    }
-
     .execution & {
-      border-bottom: 2px solid $color-execution;
-    }
+      border-bottom: 1px solid $color-execution;
+      box-shadow: inset 0 -1px 0 0 $color-execution;
 
-    .add & {
-      border-bottom: 2px solid $color-add;
+      &:active,
+      &:hover {
+        border-bottom-color: darken($color-execution, 15);
+        box-shadow: inset 0 -2px 0 0 darken($color-execution, 15);
+        transition: all 0.8s $curve-standard;
+      }
     }
   }
 

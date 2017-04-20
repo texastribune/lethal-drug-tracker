@@ -99,7 +99,7 @@
   filter: drop-shadow(1px 1px 1px transparentize($color-primary, .5));
   text-align: right;
 
-  @include mq($from: m) {
+  @include mq($from: l) {
     margin-right: $gutter-half;
   }
 }
@@ -109,9 +109,9 @@
   margin-right: $gutter * .75;
   text-decoration: none;
 
-  // &:last-child {
-  //   margin-right: 0;
-  // }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .icon-facebook:active, .icon-facebook:hover {

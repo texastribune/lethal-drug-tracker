@@ -21,6 +21,20 @@
   <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
   <!-- End fonts -->
   <link rel="stylesheet" href="{{ static('styles/main.css') }}">
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-9827490-1', 'auto');ga('send', 'pageview');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ data.story.headline }}",
+    "url": "{{ staticAbsolute('/') }}",
+    "thumbnailUrl": "https://static.texastribune.org/media/images/2017/04/20/TT-InjectionInventory_lead.png",
+    "dateCreated": "{{ data.story.lastDate }}T05:01:00+00:00",
+    "articleSection": "FRONT PAGE",
+    "keywords": ["death penalty", "lethal injection"],
+    "creator": ["Jolie McCullough"]
+  }
+  </script>
 </head>
 <body class="{% block body_class %}{% endblock body_class %}">
 
@@ -41,9 +55,24 @@
 
 {% if IS_PRODUCTION %}
 <!-- Google Analytics -->
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-9827490-1', 'auto');ga('send', 'pageview');</script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- End Google Analytics -->
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="texastribune.org"></span>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
 {% endif %}
 </body>
 </html>

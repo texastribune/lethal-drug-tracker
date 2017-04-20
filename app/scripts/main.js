@@ -1,16 +1,16 @@
 import './utils/polyfills';
 import { h, render } from 'preact';
-import buildChart from './stepChart';
+// import buildChart from './stepChart';
 import onDocumentReady from './utils/on-document-ready';
 import debounce from './utils/debounce'
 import RelatedStories from './related-stories';
 
 onDocumentReady(makeDots);
-onDocumentReady(buildChart);
+// onDocumentReady(buildChart);
 
 document.getElementById('more-log').addEventListener('click', toggleLog);
 window.addEventListener('resize', debounce(makeDots, 200));
-window.addEventListener('resize', debounce(buildChart, 300));
+// window.addEventListener('resize', debounce(buildChart, 300));
 const relatedStories = document.querySelector('#related-stories-container');
 onDocumentReady(loadRelatedStories);
 

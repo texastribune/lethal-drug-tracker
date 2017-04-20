@@ -2,7 +2,7 @@
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
   "lastDate": "2017-04-17",
-  "subhead": "With execution drugs in short supply around the nation and increasing secrecy among providers, the Texas Tribune is keeping track of movement in the state’s supply.",
+  "subhead": "With execution drugs in short supply around the nation and increasing secrecy about providers, the Texas Tribune is keeping track of movement in the state’s supply.",
   "currentDose": "18",
   "currentExecutions": "5",
   "dots": [
@@ -11,38 +11,33 @@
       "doses": "8",
       "executions": [
         {
-          "firstName": "Tilon",
-          "lastName": "Carter",
+          "name": "Tilon Carter",
           "id": "999517",
           "date": "2017-05-16"
         },
         {
-          "firstName": "Juan",
-          "lastName": "Castillo",
+          "name": "Juan Castillo",
           "id": "999502",
           "date": "2017-05-24"
         },
         {
-          "firstName": "Steven",
-          "lastName": "Long",
+          "name": "Steven Long",
           "id": "999514",
           "date": "2017-06-28"
         },
         {
-          "firstName": "Kosoul",
-          "lastName": "Chanthakoummane",
+          "name": "Kosoul Chanthakoummane",
           "id": "999529",
           "date": "2017-07-19"
         }
       ]
     },
     {
-      "expires": "2018-01-18",
+      "expires": "2018-01-22",
       "doses": "10",
       "executions": [
         {
-          "firstName": "Taichin",
-          "lastName": "Preyor",
+          "name": "Taichin Preyor",
           "id": "999494",
           "date": "2017-07-27"
         }
@@ -129,32 +124,44 @@
   ],
   "prose": [
     {
-      "type": "text",
-      "value": "things to mention (no order yet):"
+      "type": "subhead",
+      "value": "Here’s why this matters"
     },
     {
       "type": "text",
-      "value": "* secrecy in providers"
+      "value": "Lethal injection has been the method for executing condemned criminals in Texas since 1977, after the U.S. Supreme Court reinstated the death penalty nationwide. But the drugs used have changed over the years as the state has struggled to get a hold of life-ending doses."
     },
     {
       "type": "text",
-      "value": "* history of injection in TX"
+      "value": "Texas, along with other states who hold executions, has been engaged in a battle for years to keep an adequate inventory of execution drugs, and at least once its supplies have dwindled down to zero. Currently, the state uses only pentobarbital, an anesthetic it obtains from compounding pharmacies kept secret from the public."
     },
     {
       "type": "text",
-      "value": "* pentobarbital - current protocol is 100 mL of solution containing 5 grams of Pento; must have a backup: started and saline flows through “ONLY AFTER” that can witnesses come in. After statement, drugs pushed followed by more saline."
+      "value": "To promote transparency in a secretive and powerful state procedure, the Texas Tribune has obtained the inventory supply of execution drugs held by the Texas Department of Criminal Justice. The information, provided through continuous open records requests, will be updated monthly with the current supply and recent changes to the state’s inventory."
     },
     {
       "type": "text",
-      "value": "* comparison to rest of nation"
+      "value": "In 2011, drug manufacturers began to cut off their products to executing states as public backlash grew against companies providing the lethal doses. In its struggle to perform executions, Texas turned to compounding pharmacies: state-regulated agencies that mix their own drugs and aren’t subject to federal drug regulations."
     },
     {
       "type": "text",
-      "value": "* constant work to find supply"
+      "value": "When names of these pharmacies became public, the owners claimed they were being harassed and sometimes asked for the drugs to be returned. Texas refused, and the state legislature passed a law in 2015 to keep private any person involved in an execution, from the person who inserts the needle to the one who sells the drug."
     },
     {
       "type": "text",
-      "value": "* how we’re getting this data through open records requests"
+      "value": "Since then, Texas seems to have had a steady supply of pentobarbital in stock for scheduled executions, faring better than some other states. In 2016, Pfizer, the last-remaining open-market execution drug manufacturer, banned its products from being used in executions."
+    },
+    {
+      "type": "text",
+      "value": "Now, many states that used to regularly perform executions have unwillingly halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited drugs or switched to use a controversial sedative, midazolam, which was the cause of two botched executions in Oklahoma and Arizona."
+    },
+    {
+      "type": "text",
+      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state attempted to import from overseas a drug previously used in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and later ruled that WHATEVER IS RULED."
+    },
+    {
+      "type": "text",
+      "value": "With a seemingly ever-changing landscape in execution drugs in Texas and the country, the Tribune is committed to tracking the lethal inventory and increasing awareness on this issue."
     }
   ],
   "credit": "Additional design by Emily Albracht and Ben Hasson."

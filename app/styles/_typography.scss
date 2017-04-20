@@ -70,8 +70,18 @@ a, a:visited {
   line-height: 1.4;
   color: lighten($color-gridgrey, 10);
 
-  @include mq($from: s) {
-    font-size: 1.1rem;
+  .display & {
+    @include mq($from: s) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .prose & {
+    margin-bottom: $gutter;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
   }
 }
 

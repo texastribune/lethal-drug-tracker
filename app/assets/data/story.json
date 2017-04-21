@@ -69,10 +69,16 @@
       "total": "27"
     },
     {
-      "dose": "+10",
+      "dose": "-1",
+      "type": "remove",
+      "date": "2017-02-07",
+      "total": "28"
+    },
+    {
+      "dose": "+11",
       "type": "add",
       "date": "2017-02-02",
-      "total": "28"
+      "total": "29"
     },
     {
       "dose": "-1",
@@ -134,19 +140,19 @@
     },
     {
       "type": "text",
-      "value": "Texas, along with other states that hold executions, has been engaged in a battle for years to keep an adequate inventory of execution drugs. Currently, the state uses only pentobarbital, an anesthetic it obtains from compounding pharmacies kept secret from the public."
+      "value": "Texas, along with other states that hold executions, has been engaged in a battle for years to keep an adequate inventory of execution drugs. Currently, the state uses only pentobarbital, a sedative it has purchased from compounding pharmacies kept secret from the public."
     },
     {
       "type": "text",
-      "value": "To promote transparency, The Texas Tribune has obtained the inventory history and current supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected through continuous open records requests, will be updated regularly with the current supply and recent changes to the state’s inventory."
+      "value": "To promote transparency, The Texas Tribune has obtained the inventory history and current supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected through continuous open records requests, will be updated regularly with the available doses and recent changes to the state’s inventory."
     },
     {
       "type": "text",
-      "value": "In 2011, drug manufacturers began cutting off sales to states with lethal injection as public backlash grew against companies providing execution drugs. As Texas’ struggled to perform executions, it turned to compounding pharmacies, state-regulated agencies that mix their own drugs and aren’t subject to federal drug regulations."
+      "value": "In 2011, <a href=\"http://phx.corporate-ir.net/phoenix.zhtml?c=175550&p=irol-newsArticle&ID=1518610&highlight\">drug manufacturers began blocking their products from being used in lethal injections</a>. As Texas’ struggled to perform executions, it turned to compounding pharmacies, state-regulated agencies that mix their own drugs without federal regulation."
     },
     {
       "type": "text",
-      "value": "When these pharmacies’ names became public, the owners said they were being harassed, and they sometimes <a href=\"http://www.reuters.com/article/us-usa-execution-drug-idUSBRE9960W320131007\">asked for the drugs to be returned</a>. Texas refused, and the state Legislature <a href=\"https://www.texastribune.org/2015/05/19/bill-making-execution-drug-providers-secret-passes/\">passed a law in 2015</a> to maintain the privacy of any person or business involved in an execution, from the person who inserts the needle to the company that sells the drug."
+      "value": "When one pharmacy’s name became public, <a href=\"https://www.texastribune.org/2014/05/29/ag-says-prisons-can-keep-execution-drugs-secret/\">the owner </a><a href=\"https://www.texastribune.org/2014/05/29/ag-says-prisons-can-keep-execution-drugs-secret/\">said he</a><a href=\"https://www.texastribune.org/2014/05/29/ag-says-prisons-can-keep-execution-drugs-secret/\"> received threats</a>, and asked for the drugs to be returned. Texas refused, and the state Legislature <a href=\"https://www.texastribune.org/2015/05/19/bill-making-execution-drug-providers-secret-passes/\">passed a law in 2015</a> to maintain the privacy of any person or business involved in an execution, from the person who inserts the needle to the company that sells the drug."
     },
     {
       "type": "text",
@@ -154,11 +160,11 @@
     },
     {
       "type": "text",
-      "value": "Now, many states that had regularly performed executions have halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited supply of drugs or switched to using a controversial sedative, midazolam, which was the involved in two botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
+      "value": "Now, states that had regularly performed executions have halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited supply of drugs or switched to using a controversial sedative, midazolam, which was involved in botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
     },
     {
       "type": "text",
-      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used by Texas in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and <a href=\"https://www.texastribune.org/2017/04/20/fda-rules-texas-attempted-import-execution-drugs/\">later ruled that the drugs couldn’t be brought into the United States</a> because they were unapproved and misbranded."
+      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used by Texas in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and <a href=\"https://www.texastribune.org/2017/04/20/fda-rules-texas-attempted-import-execution-drugs/\">later ruled that they couldn’t be brought into the United States</a> because they were unapproved and misbranded."
     }
   ],
   "credit": "Additional design by Emily Albracht and Ben Hasson."

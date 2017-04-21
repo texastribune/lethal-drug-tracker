@@ -5,7 +5,7 @@
 </ul>
 {% for expiration in data %}
   <div class="expiration {% if loop.first %}first{% endif %}">
-    <h4 class="graphic-title">{% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s{% endif %} expire {{ apFormatDate(expiration.expires) }}</h4>
+    <h4 class="graphic-title">{% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s expire{% else %} expires{% endif %} {{ apFormatDate(expiration.expires) }}</h4>
     {% for i in range(0, expiration.doses) %}
       <div class="dose-dot {%if i < expiration.executions.length %}execution{% endif %}">
       </div>

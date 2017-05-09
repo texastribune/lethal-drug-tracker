@@ -17,11 +17,6 @@
           "date": "2017-05-16"
         },
         {
-          "name": "Juan Castillo",
-          "id": "999502",
-          "date": "2017-05-24"
-        },
-        {
           "name": "Steven Long",
           "id": "999514",
           "date": "2017-06-28"
@@ -41,6 +36,11 @@
           "name": "Taichin Preyor",
           "id": "999494",
           "date": "2017-07-27"
+        },
+        {
+          "name": "Juan Castillo",
+          "id": "999502",
+          "date": "2017-09-07"
         }
       ]
     }

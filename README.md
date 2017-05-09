@@ -1,16 +1,13 @@
-# Data Visuals Kit
+# Lethal Injection Drugs in Texas
 
-I don't know if this will be the final resting place for this, but it needs somewhere to live.
+The Texas Tribune's project tracking the state's supply of lethal injection drugs.
+
+This project was produced and is maintained by [Jolie McCullough](https://github.com/joliesky) using the Texas Tribune's Data Visuals kit.
 
 ## Quickstart
 
-Run these commands to create your project's folder:
+_Please note - some static assets required to make this project work are only accessible to Texas Tribune developers._
 
-```sh
-git clone --depth=1 https://github.com/texastribune/idv-kit.git <name-of-project>
-cd <name-of-project> && rm -rf .git
-```
-
-Next, `npm install`.
+Clone the project, then run `npm install`. Then pull down the assets with `npm run assets:pull`, and the data with `npm run data:fetch`. Use `npm run serve` to run the local development server.
 
 Now, get to work!

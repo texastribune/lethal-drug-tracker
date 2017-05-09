@@ -46,7 +46,7 @@ function toggleLog() {
 }
 
 function loadRelatedStories () {
-  const url = 'https://www.texastribune.org/api/content/?content_type=story,audio,video,pointer&amp;tag=subject-death-penalty&amp;tag!=object-tribcast&amp;fields=id,url,readable_pub_date,seo_headline,short_summary,lead_art&amp;limit=4&amp;format=json';
+  const url = 'https://www.texastribune.org/api/content/?content_type=story,audio,video,pointer&amp;tag=subject-death-penalty&amp;tag!=object-tribcast&amp;fields=id,url,readable_pub_date,seo_headline,short_summary,lead_art&amp;limit=6&amp;format=json';
   render(
     <RelatedStories
       src={url}

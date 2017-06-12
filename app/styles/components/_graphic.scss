@@ -90,6 +90,10 @@
         color: $color-primary;
         position: relative;
       }
+
+      &.no-dose {
+        border: 0;
+      }
     }
 
     @include mq($from: m) {
@@ -265,6 +269,7 @@
 
     &.execution {
       background-color: $color-orange;
+      border: 0;
     }
   }
 }

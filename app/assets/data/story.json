@@ -1,7 +1,7 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2017-04-21",
+  "lastDate": "2017-06-12",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
   "currentDose": "18",
@@ -10,23 +10,7 @@
     {
       "expires": "2017-07-20",
       "doses": "8",
-      "executions": [
-        {
-          "name": "Tilon Carter",
-          "id": "999517",
-          "date": "2017-05-16"
-        },
-        {
-          "name": "Steven Long",
-          "id": "999514",
-          "date": "2017-06-28"
-        },
-        {
-          "name": "Kosoul Chanthakoummane",
-          "id": "999529",
-          "date": "2017-07-19"
-        }
-      ]
+      "executions": []
     },
     {
       "expires": "2018-01-22",
@@ -38,9 +22,30 @@
           "date": "2017-07-27"
         },
         {
+          "name": "Steven Long",
+          "id": "999514",
+          "date": "2017-08-30"
+        },
+        {
           "name": "Juan Castillo",
           "id": "999502",
           "date": "2017-09-07"
+        },
+        {
+          "name": "Clinton Young",
+          "id": "999447",
+          "date": "2017-10-26"
+        }
+      ]
+    },
+    {
+      "expires": "0",
+      "doses": "0",
+      "executions": [
+        {
+          "name": "William Rayford",
+          "id": "999371",
+          "date": "2018-01-30"
         }
       ]
     }

@@ -5,11 +5,23 @@
 </ul>
 {% for expiration in data %}
   <div class="expiration {% if loop.first %}first{% endif %}">
-    <h4 class="graphic-title">{% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s expire{% else %} expires{% endif %} {{ apFormatDate(expiration.expires) }}</h4>
-    {% for i in range(0, expiration.doses) %}
-      <div class="dose-dot {%if i < expiration.executions.length %}execution{% endif %}">
-      </div>
-    {% endfor %}
+    <h4 class="graphic-title">
+      {% if expiration.doses == 0 %}
+        Execution{%if i < expiration.executions.length %}s{% endif %} scheduled after doses in stock expire
+      {% else %}
+        {% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s expire{% else %} expires{% endif %} {{ apFormatDate(expiration.expires) }}
+      {% endif %}
+    </h4>
+    {% if expiration.doses == 0 %}
+      {% for i in range(0, expiration.executions.length) %}
+      <div class="dose-dot execution no-dose"></div>
+      {% endfor %}
+    {% else %}
+      {% for i in range(0, expiration.doses) %}
+        <div class="dose-dot {%if i < expiration.executions.length %}execution{% endif %}">
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 {% endfor %}
 {% endmacro %}

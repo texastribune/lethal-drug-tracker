@@ -185,7 +185,7 @@
     flex: 1;
     text-align: center;
 
-    .expire &, .return &, .remove & {
+    .expire &, .return &, .remove &, .retested &  {
       background-color: $color-expire;
     }
 

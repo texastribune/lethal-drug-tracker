@@ -1,56 +1,111 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2017-06-12",
+  "lastDate": "2018-02-15",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
-  "currentDose": "18",
-  "currentExecutions": "5",
+  "currentDose": "12",
+  "currentExecutions": "4",
   "dots": [
     {
-      "expires": "2017-07-20",
+      "expires": "2018-07-20",
       "doses": "8",
-      "executions": []
-    },
-    {
-      "expires": "2018-01-22",
-      "doses": "10",
       "executions": [
         {
-          "name": "Taichin Preyor",
-          "id": "999494",
-          "date": "2017-07-27"
+          "name": "Thomas Whitaker",
+          "id": "999522",
+          "date": "2018-02-22"
         },
         {
-          "name": "Steven Long",
-          "id": "999514",
-          "date": "2017-08-30"
+          "name": "Rosendo Rodriguez III",
+          "id": "999534",
+          "date": "2018-03-27"
+        },
+        {
+          "name": "Erick Davila",
+          "id": "999545",
+          "date": "2018-04-25"
         },
         {
           "name": "Juan Castillo",
           "id": "999502",
-          "date": "2017-09-07"
-        },
-        {
-          "name": "Clinton Young",
-          "id": "999447",
-          "date": "2017-10-26"
+          "date": "2018-05-16"
         }
       ]
     },
     {
-      "expires": "0",
-      "doses": "0",
-      "executions": [
-        {
-          "name": "William Rayford",
-          "id": "999371",
-          "date": "2018-01-30"
-        }
-      ]
+      "expires": "2018-11-09",
+      "doses": "4",
+      "executions": []
     }
   ],
   "pastLog": [
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-02-01",
+      "name": "John Battaglia",
+      "link": "https://www.texastribune.org/2018/02/01/dallas-man-who-killed-his-daughters-set-again-execution/",
+      "total": "12"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-01-30",
+      "name": "William Rayford",
+      "link": "https://www.texastribune.org/2018/01/30/texas-man-set-execution-hopes-supreme-court-cases-will-stop-his-death/",
+      "total": "13"
+    },
+    {
+      "dose": "6",
+      "type": "retested",
+      "date": "2018-01-22",
+      "total": "14"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-01-18",
+      "name": "Anthony Shore",
+      "link": "https://www.texastribune.org/2018/01/18/texas-nations-first-execution-year-set-houston-serial-killer/",
+      "total": "14"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-11-08",
+      "name": "Ruben Cardenas",
+      "link": "https://www.texastribune.org/2017/11/08/planned-execution-mexican-national-draws-international-ire/",
+      "total": "15"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-10-12",
+      "name": "Robert Pruett",
+      "link": "https://www.texastribune.org/2017/10/12/texas-executes-robert-pruett-who-insisted-innocence-prison-guards-murd/",
+      "total": "16"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2017-07-27",
+      "name": "TaiChin Preyor",
+      "link": "https://www.texastribune.org/2017/07/27/texas-execution-taichin-preyor/",
+      "total": "17"
+    },
+    {
+      "dose": "+8",
+      "type": "add",
+      "date": "2017-07-20",
+      "total": "18"
+    },
+    {
+      "dose": "-8",
+      "type": "expire",
+      "date": "2017-07-20",
+      "total": "10"
+    },
     {
       "dose": "-8",
       "type": "expire",

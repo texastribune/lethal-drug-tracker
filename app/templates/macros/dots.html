@@ -7,7 +7,7 @@
   <div class="expiration {% if loop.first %}first{% endif %}">
     <h4 class="graphic-title">
       {% if expiration.doses == 0 %}
-        Execution{%if i < expiration.executions.length %}s{% endif %} scheduled after doses in stock expire
+        Execution{%if expiration.executions.length > 1 %}s{% endif %} scheduled after doses in stock expire
       {% else %}
         {% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}} dose{% if expiration.doses > 1 %}s expire{% else %} expires{% endif %} {{ apFormatDate(expiration.expires) }}
       {% endif %}

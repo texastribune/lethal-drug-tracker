@@ -1,45 +1,96 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2018-02-15",
+  "lastDate": "2018-05-17",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
-  "currentDose": "12",
-  "currentExecutions": "4",
+  "currentDose": "9",
+  "currentExecutions": "8",
   "dots": [
     {
       "expires": "2018-07-20",
-      "doses": "8",
+      "doses": "7",
       "executions": [
         {
-          "name": "Thomas Whitaker",
-          "id": "999522",
-          "date": "2018-02-22"
+          "name": "Clifton Williams",
+          "id": "999515",
+          "date": "2018-06-21"
         },
         {
-          "name": "Rosendo Rodriguez III",
-          "id": "999534",
-          "date": "2018-03-27"
+          "name": "Danny Bible",
+          "id": "999455",
+          "date": "2018-06-27"
         },
         {
-          "name": "Erick Davila",
-          "id": "999545",
-          "date": "2018-04-25"
-        },
-        {
-          "name": "Juan Castillo",
-          "id": "999502",
-          "date": "2018-05-16"
+          "name": "Christopher Young",
+          "id": "999508",
+          "date": "2018-07-17"
         }
       ]
     },
     {
       "expires": "2018-11-09",
-      "doses": "4",
-      "executions": []
+      "doses": "2",
+      "executions": [
+        {
+          "name": "Ruben Gutierrez",
+          "id": "999308",
+          "date": "2018-09-12"
+        },
+        {
+          "name": "Troy Clark",
+          "id": "999351",
+          "date": "2018-09-26"
+        }
+      ]
+    },
+    {
+      "expires": "No available drugs",
+      "doses": "0",
+      "executions": [
+        {
+          "name": "Daniel Acker",
+          "id": "999381",
+          "date": "2018-09-27"
+        },
+        {
+          "name": "Juan Ramon Meza Segundo",
+          "id": "999520",
+          "date": "2018-10-10"
+        },
+        {
+          "name": "Kwame Rockwell",
+          "id": "999570",
+          "date": "2018-10-24"
+        }
+      ]
     }
   ],
   "pastLog": [
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-05-16",
+      "name": "Juan Castillo",
+      "link": "https://www.texastribune.org/2018/05/16/texas-execute-juan-castillo-murder-tommy-garcia/",
+      "total": "9"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-04-25",
+      "name": "Erick Davila",
+      "link": "https://www.texastribune.org/2018/04/25/texas-death-penalty-case-went-us-supreme-court-now-set-execution/",
+      "total": "10"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-03-27",
+      "name": "Rosendo Rodriguez III",
+      "link": "https://www.texastribune.org/2018/03/27/lubbocks-suitcase-killer-fights-upcoming-execution/",
+      "total": "11"
+    },
     {
       "dose": "-1",
       "type": "execution",

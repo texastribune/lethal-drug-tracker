@@ -3,7 +3,7 @@
   {% for item in data %}
   <li class="log--item {{ item.type }}{% if loop.index > 3 %} hidden{% endif %}" id="loop-{{ loop.index }}">
     <span class="log--highlight">{{ item.dose }} {% if item.dose == "-1" or item.dose == "+1" %}dose{% else %}doses{% endif %}</span>
-    <span class="log--date">{{ apFormatDate(item.date) }}</span>
+    <span class="log--date">{% if item.date %}{{ apFormatDate(item.date) }}{% elif item.est_date %}{{ item.est_date }}{% endif %}</span>
     <span class="log--desc">
       {% if item.type == 'return' %}
         Drugs returned to supplier
@@ -11,6 +11,8 @@
         Drugs expired
       {% elif item.type == 'remove' %}
           Drugs removed from stock
+      {% elif item.type == 'testing' %}
+          Drugs removed from stock for testing
       {% elif item.type == 'add' %}
         Drugs added to inventory
       {% elif item.type == 'retested' %}

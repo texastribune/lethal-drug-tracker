@@ -1,36 +1,15 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2018-05-17",
+  "lastDate": "2018-07-27",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
-  "currentDose": "9",
+  "currentDose": "21",
   "currentExecutions": "8",
   "dots": [
     {
-      "expires": "2018-07-20",
+      "expires": "2019-06-05",
       "doses": "7",
-      "executions": [
-        {
-          "name": "Clifton Williams",
-          "id": "999515",
-          "date": "2018-06-21"
-        },
-        {
-          "name": "Danny Bible",
-          "id": "999455",
-          "date": "2018-06-27"
-        },
-        {
-          "name": "Christopher Young",
-          "id": "999508",
-          "date": "2018-07-17"
-        }
-      ]
-    },
-    {
-      "expires": "2018-11-09",
-      "doses": "2",
       "executions": [
         {
           "name": "Ruben Gutierrez",
@@ -41,13 +20,7 @@
           "name": "Troy Clark",
           "id": "999351",
           "date": "2018-09-26"
-        }
-      ]
-    },
-    {
-      "expires": "No available drugs",
-      "doses": "0",
-      "executions": [
+        },
         {
           "name": "Daniel Acker",
           "id": "999381",
@@ -62,11 +35,66 @@
           "name": "Kwame Rockwell",
           "id": "999570",
           "date": "2018-10-24"
+        },
+        {
+          "name": "Emanuel Kemp Jr.",
+          "id": "909",
+          "date": "2018-11-07"
+        },
+        {
+          "name": "Joseph Garcia",
+          "id": "999441",
+          "date": "2018-12-04"
+        }
+      ]
+    },
+    {
+      "expires": "2019-06-27",
+      "doses": "14",
+      "executions": [
+        {
+          "name": "Robert Jennings",
+          "id": "956",
+          "date": "2019-01-30"
         }
       ]
     }
   ],
   "pastLog": [
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-07-17",
+      "name": "Christopher Young",
+      "link": "https://www.texastribune.org/2018/07/17/chris-young-execution-clemency/",
+      "total": "21"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-06-27",
+      "name": "Danny Bible",
+      "link": "https://www.texastribune.org/2018/06/27/danny-bible-faces-execution-1979-texas-rape-and-murder-he-says-hes-too/",
+      "total": "22"
+    },
+    {
+      "dose": "-1",
+      "type": "testing",
+      "date": "2018-06-20",
+      "total": "23"
+    },
+    {
+      "dose": "+15",
+      "type": "add",
+      "date": "2018-06-18",
+      "total": "24"
+    },
+    {
+      "dose": "8",
+      "type": "retested",
+      "est_date": "June 2018",
+      "total": "9"
+    },
     {
       "dose": "-1",
       "type": "execution",
@@ -146,16 +174,10 @@
       "total": "17"
     },
     {
-      "dose": "+8",
-      "type": "add",
+      "dose": "8",
+      "type": "retested",
       "date": "2017-07-20",
       "total": "18"
-    },
-    {
-      "dose": "-8",
-      "type": "expire",
-      "date": "2017-07-20",
-      "total": "10"
     },
     {
       "dose": "-8",
@@ -181,7 +203,7 @@
     },
     {
       "dose": "-1",
-      "type": "remove",
+      "type": "testing",
       "date": "2017-02-07",
       "total": "28"
     },
@@ -255,7 +277,7 @@
     },
     {
       "type": "text",
-      "value": "To promote transparency, The Texas Tribune has obtained the inventory history and current supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected through continuous open records requests, will be updated regularly with the available doses and recent changes to the state’s inventory."
+      "value": "To promote transparency, The Texas Tribune has obtained the inventory history and current supply of execution drugs held by the Texas Department of Criminal Justice. The information, collected through continuous open records requests, is updated regularly with the available doses and recent changes to the state’s inventory."
     },
     {
       "type": "text",
@@ -267,15 +289,19 @@
     },
     {
       "type": "text",
-      "value": "Since then, Texas appears to have had a steady supply of pentobarbital in stock for scheduled executions, faring better than some other states. In 2016, Pfizer, the last-remaining open-market execution drug manufacturer, <a href=\"https://www.nytimes.com/2016/05/14/us/pfizer-execution-drugs-lethal-injection.html?_r=0\">banned its products</a> from being used in executions."
+      "value": "Since then, Texas has kept enough pentobarbital in stock for scheduled executions, faring better than some other states. But the drugs haven’t come easy."
     },
     {
       "type": "text",
-      "value": "Now, states that had regularly performed executions have halted the practice as they are unable to obtain any drugs. Others have rushed to schedule executions ahead of the expiration dates of their limited supply of drugs or switched to using a controversial sedative, midazolam, which was involved in botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
+      "value": "In 2016, Pfizer, the last-remaining open-market manufacturer of drugs that were used in executions, <a href=\"https://www.nytimes.com/2016/05/14/us/pfizer-execution-drugs-lethal-injection.html?_r=0\">banned its products</a> from being used for that purpose. Afterward, states that had regularly performed executions halted the practice as they are unable to obtain any drugs. Others rushed to schedule executions ahead of the expiration dates of their limited supply of drugs or switched to using a controversial sedative, midazolam, which was involved in botched executions in <a href=\"https://www.nytimes.com/2014/04/30/us/oklahoma-executions.html\">Oklahoma</a> and <a href=\"http://www.cnn.com/2015/03/16/politics/clayton-lockett-oklahoma-execution/\">Arizona</a>."
     },
     {
       "type": "text",
-      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used by Texas in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and <a href=\"https://www.texastribune.org/2017/04/20/fda-rules-texas-attempted-import-execution-drugs/\">later ruled that they couldn’t be brought into the United States</a> because they were unapproved and misbranded."
+      "value": "Texas has been able to keep an adequate supply on hand, but part of that is because the state has <a href=\"https://www.texastribune.org/2018/05/17/texas-lethal-injection-drugs-are-set-expire-upcoming-executions/\">repeatedly extended the expiration date</a> of doses in stock — retesting the potency levels as the expiration date nears and then relabeling them. The practice has drawn sharp criticism from death penalty defense attorneys, who say the old drugs are causing painful executions."
+    },
+    {
+      "type": "text",
+      "value": "Even with its relative security, Texas is always looking for new supplies. In 2015, the state <a href=\"https://www.buzzfeed.com/chrismcdaniel/arizona-texas-purchased-execution-drugs-illegally?utm_term=.sp7DKY14O#.bwNKdq7Ye\">attempted to import from overseas</a> a drug previously used by Texas in executions, sodium thiopental. The U.S. Food and Drug Administration seized the drugs and <a href=\"https://www.texastribune.org/2017/04/20/fda-rules-texas-attempted-import-execution-drugs/\">later ruled that they couldn’t be brought into the United States</a> because they were unapproved and misbranded, but the state is fighting that ruling."
     }
   ],
   "credit": "Additional design by Emily Albracht and Ben Hasson."

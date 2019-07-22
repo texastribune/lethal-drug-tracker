@@ -1,3 +1,4 @@
+import './utils/ads';
 import './utils/polyfills';
 import { h, render } from 'preact';
 // import buildChart from './stepChart';

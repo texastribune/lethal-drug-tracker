@@ -1,4 +1,6 @@
 {
+  "name": "lethal-drug-tracker",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "assets:pull": "node ./utils/deployment/pull-assets.js",

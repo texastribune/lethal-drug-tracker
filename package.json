@@ -1,6 +1,9 @@
 {
   "name": "lethal-drug-tracker",
   "version": "0.0.1",
+  "description": "Checks the live status of a camera used by the Texas House and Senate.",
+  "repository": "texastribune/lethal-drug-tracker",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "assets:pull": "node ./utils/deployment/pull-assets.js",

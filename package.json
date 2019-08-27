@@ -61,6 +61,9 @@
     "webpack-dev-middleware": "^1.9.0"
   },
   "dependencies": {
+    "d3": "^4.7.4",
+    "preact": "^8.1.0",
+    "promise-polyfill": "^6.0.2",
     "sass-mq": "^3.3.2"
   }
 }

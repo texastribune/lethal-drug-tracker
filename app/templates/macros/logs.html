@@ -16,7 +16,9 @@
       {% elif item.type == 'add' %}
         Drugs added to inventory
       {% elif item.type == 'retested' %}
-        Expiration date was extended
+        Expiration date was extended <span class="button--info"><a class="link" href="https://www.texastribune.org/2018/05/17/texas-lethal-injection-drugs-are-set-expire-upcoming-executions/"><svg class="icon icon-info">
+          <use xlink:href="#icon-info"></use>
+        </svg></a></span>
       {% elif item.type == 'execution' %}
         Execution of {{ item.name }}{% if item.link %} <a class="log--underline link" href="{{ item.link }}">Read story</a>{% endif %}
       {% endif %}

@@ -1,66 +1,240 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2018-07-27",
+  "lastDate": "2021-01-28",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
-  "currentDose": "21",
-  "currentExecutions": "8",
+  "currentDose": "16",
+  "currentExecutions": "5",
   "dots": [
     {
-      "expires": "2019-06-05",
-      "doses": "7",
+      "expires": "2020-12-18",
+      "doses": "4",
+      "executions": []
+    },
+    {
+      "expires": "2021-06-23",
+      "doses": "12",
       "executions": [
         {
-          "name": "Ruben Gutierrez",
-          "id": "999308",
-          "date": "2018-09-12"
+          "name": "Edward Busby, Jr.",
+          "id": "999506",
+          "date": "2021-02-10"
         },
         {
-          "name": "Troy Clark",
-          "id": "999351",
-          "date": "2018-09-26"
+          "name": "Ramiro Ibarra",
+          "id": "999247",
+          "date": "2021-03-04"
         },
         {
-          "name": "Daniel Acker",
-          "id": "999381",
-          "date": "2018-09-27"
+          "name": "Ramiro Gonzales",
+          "id": "999513",
+          "date": "2021-04-20"
         },
         {
-          "name": "Juan Ramon Meza Segundo",
-          "id": "999520",
-          "date": "2018-10-10"
-        },
-        {
-          "name": "Kwame Rockwell",
-          "id": "999570",
-          "date": "2018-10-24"
-        },
-        {
-          "name": "Emanuel Kemp Jr.",
-          "id": "909",
-          "date": "2018-11-07"
-        },
-        {
-          "name": "Joseph Garcia",
-          "id": "999441",
-          "date": "2018-12-04"
+          "name": "Quintin Jones",
+          "id": "999379",
+          "date": "2021-05-19"
         }
       ]
     },
     {
-      "expires": "2019-06-27",
-      "doses": "14",
+      "expires": "",
+      "doses": "0",
       "executions": [
         {
-          "name": "Robert Jennings",
-          "id": "956",
-          "date": "2019-01-30"
+          "name": "John Hummel",
+          "id": "999567",
+          "date": "2021-06-30"
         }
       ]
     }
   ],
   "pastLog": [
+    {
+      "dose": "12",
+      "type": "retested",
+      "est_date": "Fall 2020",
+      "total": "16"
+    },
+    {
+      "dose": "-1",
+      "type": "return",
+      "date": "2020-09-08",
+      "total": "16"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2020-07-08",
+      "name": "Billy Wardlow",
+      "link": "https://www.texastribune.org/2020/07/08/texas-execution-billy-wardlow/",
+      "total": "17"
+    },
+    {
+      "dose": "-1",
+      "type": "expire",
+      "date": "2020-05-06",
+      "total": "18"
+    },
+    {
+      "dose": "4",
+      "type": "retested",
+      "est_date": "March 2020",
+      "total": "19"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2020-02-06",
+      "name": "Abel Ochoa",
+      "link": "https://www.texastribune.org/2020/02/06/texas-execution-abel-ochoa-death-row/",
+      "total": "19"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2020-01-15",
+      "name": "John Gardner",
+      "link": "https://www.texastribune.org/2020/01/15/texas-execution-john-gardner-death-row/",
+      "total": "20"
+    },
+    {
+      "dose": "14",
+      "type": "retested",
+      "est_date": "January 2020",
+      "total": "21"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-12-11",
+      "name": "Travis Runnels",
+      "link": "https://www.texastribune.org/2019/12/11/texas-death-row-travis-runnels-execution-false-testimony/",
+      "total": "21"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-11-06",
+      "name": "Justen Hall",
+      "link": "https://www.texastribune.org/2019/11/06/texas-death-row-inmate-justen-hall-execution-scheduled/",
+      "total": "22"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-09-25",
+      "name": "Robert Sparks",
+      "link": "https://www.texastribune.org/2019/09/25/texas-execution-robert-sparks/",
+      "total": "23"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-09-10",
+      "name": "Mark Soliz",
+      "link": "https://www.texastribune.org/2019/09/10/texas-execution-mark-soliz/",
+      "total": "24"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-09-04",
+      "name": "Billy Crutsinger",
+      "link": "https://www.texastribune.org/2019/09/04/billy-crutsinger-execution-texas/",
+      "total": "25"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-08-21",
+      "name": "Larry Swearingen",
+      "link": "https://www.texastribune.org/2019/08/21/larry-swearingen-execution-texas/",
+      "total": "26"
+    },
+    {
+      "dose": "12",
+      "type": "retested",
+      "est_date": "May 2019",
+      "total": "27"
+    },
+    {
+      "dose": "-1",
+      "type": "remove",
+      "date": "2019-05-01",
+      "total": "27"
+    },
+    {
+      "dose": "+15",
+      "type": "add",
+      "date": "2019-04-29",
+      "total": "28"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-04-24",
+      "name": "John William King",
+      "link": "https://www.texastribune.org/2019/04/24/texas-execution-john-william-king-james-byrd/",
+      "total": "13"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2019-02-28",
+      "name": "Billie Coble",
+      "link": "https://www.texastribune.org/2019/02/28/billie-coble-execution-texas/",
+      "total": "14"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-1-30",
+      "name": "Robert Jennings",
+      "link": "https://www.texastribune.org/2019/01/30/robert-jennings-execution-texas/",
+      "total": "15"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-12-11",
+      "name": "Alvin Braziel",
+      "link": "https://www.texastribune.org/2018/12/11/Texas-execution-death-row-Alvin-Braziel/",
+      "total": "16"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-12-04",
+      "name": "Joseph Garcia",
+      "link": "https://www.texastribune.org/2018/12/04/Joseph-Garcia-Texas-seven-texas-execution/",
+      "total": "17"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-11-14",
+      "name": "Robert Ramos",
+      "link": "https://www.texastribune.org/2018/11/14/texas-execution-robert-moreno-ramos-lethal-injection/",
+      "total": "18"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-09-27",
+      "name": "Daniel Acker",
+      "link": "https://www.texastribune.org/2018/09/27/daniel-acker-execution-texas/",
+      "total": "19"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2018-09-26",
+      "name": "Troy Clark",
+      "link": "https://www.texastribune.org/2018/09/26/troy-clark-execution-texas-murder/",
+      "total": "20"
+    },
     {
       "dose": "-1",
       "type": "execution",

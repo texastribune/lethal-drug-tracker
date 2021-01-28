@@ -1,6 +1,7 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
+<<<<<<< HEAD
   "lastDate": "2021-01-28",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
@@ -35,10 +36,82 @@
           "name": "Quintin Jones",
           "id": "999379",
           "date": "2021-05-19"
+=======
+  "lastDate": "2019-08-19",
+  "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
+  "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
+  "currentDose": "27",
+  "currentExecutions": "12",
+  "dots": [
+    {
+      "expires": "2020-01-12",
+      "doses": "15",
+      "executions": [
+        {
+          "name": "Larry Swearingen",
+          "id": "999361",
+          "date": "2019-08-21"
+        },
+        {
+          "name": "Billy Crutsinger",
+          "id": "999459",
+          "date": "2019-09-04"
+        },
+        {
+          "name": "Mark Anthony Soliz",
+          "id": "999571",
+          "date": "2019-09-10"
+        },
+        {
+          "name": "Robert Sparks",
+          "id": "999542",
+          "date": "2019-09-25"
+        },
+        {
+          "name": "Stephen Barbee",
+          "id": "999507",
+          "date": "2019-10-02"
+        },
+        {
+          "name": "Randy Halprin",
+          "id": "999453",
+          "date": "2019-10-10"
+        },
+        {
+          "name": "Randall Mays",
+          "id": "999535",
+          "date": "2019-10-16"
+        },
+        {
+          "name": "Ruben Gutierrez",
+          "id": "999308",
+          "date": "2019-10-30"
+        },
+        {
+          "name": "Justen Hall",
+          "id": "999497",
+          "date": "2019-11-06"
+        },
+        {
+          "name": "Patrick Murphy",
+          "id": "999461",
+          "date": "2019-11-13"
+        },
+        {
+          "name": "Rodney Reed",
+          "id": "999271",
+          "date": "2019-11-20"
+        },
+        {
+          "name": "Travis Runnels",
+          "id": "999505",
+          "date": "2019-12-11"
+>>>>>>> c7376eb4c03f2f09f3e6c44474c68ac5788acbc1
         }
       ]
     },
     {
+<<<<<<< HEAD
       "expires": "",
       "doses": "0",
       "executions": [
@@ -48,12 +121,18 @@
           "date": "2021-06-30"
         }
       ]
+=======
+      "expires": "2020-05-06",
+      "doses": "12",
+      "executions": []
+>>>>>>> c7376eb4c03f2f09f3e6c44474c68ac5788acbc1
     }
   ],
   "pastLog": [
     {
       "dose": "12",
       "type": "retested",
+<<<<<<< HEAD
       "est_date": "Fall 2020",
       "total": "16"
     },
@@ -156,6 +235,8 @@
     {
       "dose": "12",
       "type": "retested",
+=======
+>>>>>>> c7376eb4c03f2f09f3e6c44474c68ac5788acbc1
       "est_date": "May 2019",
       "total": "27"
     },

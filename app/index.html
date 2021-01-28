@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% import 'macros/shares.html' as shares %}
+{% from 'macros/ads.html' import ad %}
 {% from 'macros/prose.html' import prose %}
 {% from 'macros/logs.html' import past_log %}
 {% from 'macros/dots.html' import buildDots, scheduledExecutions %}
@@ -11,6 +12,8 @@
 {% block content %}
 
 <div class="container">
+  {{ ad('leader') }}
+
   <header class="article-header text-center">
     <h1 class="article-title">{{ context.headline }}</h1>
     <p class="article-byline">
@@ -65,6 +68,8 @@
   <div class="notes">
     <p>{{ context.credit }}</p>
   </div>
+
+  {{ ad('footer') }}
 </div>
 
 {% endblock content %}

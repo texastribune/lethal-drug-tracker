@@ -10,13 +10,9 @@
         Execution{%if expiration.executions.length > 1 %}s{% endif %} scheduled after doses in stock expire
       {% else %}
         {% if expiration.doses < 10 %}0{% endif %}{{expiration.doses}}
-          dose{% if expiration.doses > 1 %}s
-          expire{% if apFormatDate(expiration.expires) < apFormatDate(date) %}d{% endif %}
+          dose{% if expiration.doses > 1 %}s expire
         {% else %}
-          {% if apFormatDate(expiration.expires) < apFormatDate(date) %}expired
-          {% else %}
           expires
-          {% endif %}
         {% endif %}
         {{ apFormatDate(expiration.expires) }}
       {% endif %}

@@ -2,7 +2,9 @@
 
 The Texas Tribune's project tracking the state's supply of lethal injection drugs.
 
-This project was produced and is maintained by [Jolie McCullough](https://github.com/joliesky) using the Texas Tribune's Data Visuals kit.
+This project was produced and maintained by [Jolie McCullough](https://github.com/joliesky) using the Texas Tribune's Data Visuals kit.
+
+**Note:** This project was sunsetted on September 2023. The data was collected through continuous open records requests and updated by [Jolie McCullough](https://github.com/joliesky) through [this Google Doc](https://docs.google.com/document/d/1ZaLM3eoUgLb-4tJCu66fbjQtNZPTL1mueTKfFtb-tgk/edit). The final data update was done on June 30, 2023.
 
 ## Quickstart
 

@@ -46,3 +46,17 @@
 .hidden {
   display: none;
 }
+
+.note-subhead {
+  margin: $gutter auto;
+  line-height: 1.4;
+  max-width: 40rem;
+  font-style: italic;
+
+  .display & {
+    color: lighten($color-gridgrey, 10);
+    @include mq($from: s) {
+      font-size: 1.1rem;
+    }
+  }
+}

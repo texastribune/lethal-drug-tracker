@@ -23,6 +23,7 @@
   </header>
 
   <div class="display">
+    <p class="note-subhead">{{ context.note }}</p>
     <div class="counts">
       <div class="doses">
         <div class="doses--num">{% if context.currentDose < 10 %}0{% endif %}{{ context.currentDose }}</div>

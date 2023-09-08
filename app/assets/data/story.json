@@ -1,50 +1,227 @@
 {
   "headline": "How many doses of lethal injection drugs does Texas have?",
   "author": "<a href=\"https://www.texastribune.org/about/staff/jolie-mccullough/\">Jolie McCullough</a>",
-  "lastDate": "2021-03-15",
+  "lastDate": "2023-06-30",
   "subhead": "With execution drugs in short supply across the nation and increasing secrecy about the companies that provide them, The Texas Tribune is keeping track of movement in the state’s supply.",
+  "note": "Editor’s note: As of August 2023, the Tribune is no longer updating this&nbsp;page.",
   "twitter_text": "Here's a look at how many execution drugs Texas has in stock right now",
-  "currentDose": "13",
+  "currentDose": "10",
   "currentExecutions": "4",
   "dots": [
     {
-      "expires": "2021-06-23",
-      "doses": "13",
+      "expires": "2023-09-27",
+      "doses": "2",
+      "executions": []
+    },
+    {
+      "expires": "2023-11-01",
+      "doses": "1",
       "executions": [
         {
-          "name": "Ramiro Gonzales",
-          "id": "999513",
-          "date": "2021-04-20"
-        },
-        {
-          "name": "Quintin Jones",
-          "id": "999379",
-          "date": "2021-05-19"
+          "name": "Jedidiah Murphy",
+          "id": "999392",
+          "date": "2023-10-10"
         }
       ]
     },
     {
-      "expires": "",
-      "doses": "0",
+      "expires": "2023-12-27",
+      "doses": "7",
       "executions": [
         {
-          "name": "John Hummel",
-          "id": "999567",
-          "date": "2021-06-30"
+          "name": "William Speer",
+          "id": "999398",
+          "date": "2023-10-26"
         },
         {
-          "name": "John Ramirez",
-          "id": "999544",
-          "date": "2021-09-08"
+          "name": "Brent Brewer",
+          "id": "999000",
+          "date": "2023-11-09"
+        },
+        {
+          "name": "David Renteria",
+          "id": "999460",
+          "date": "2023-11-16"
         }
       ]
     }
   ],
   "pastLog": [
     {
-      "dose": "3",
+      "dose": "-1",
+      "type": "execution",
+      "name": "Arthur Brown Jr.",
+      "date": "2023-03-09",
+      "link": "https://www.texastribune.org/2023/03/09/texas-execution-arthur-brown-jr/",
+      "total": "10"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "Gary Green",
+      "date": "2023-03-07",
+      "link": "https://www.texastribune.org/2023/03/07/texas-execution-gary-green/",
+      "total": "11"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "John Balentine",
+      "date": "2023-02-08",
+      "link": "https://www.texastribune.org/2023/02/08/texas-execution-john-balentine/",
+      "total": "12"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "Wesley Ruiz",
+      "date": "2023-02-01",
+      "link": "https://www.texastribune.org/2023/02/01/texas-execution-drugs-wesley-ruiz/",
+      "total": "13"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "Robert Fratta",
+      "date": "2023-01-10",
+      "link": "https://www.texastribune.org/2023/01/10/texas-robert-fratta-execution-expired-drugs/",
+      "total": "14"
+    },
+    {
+      "dose": "+8",
+      "type": "add",
+      "date": "2023-01-05",
+      "total": "15"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "Stephen Barbee",
+      "date": "2022-11-16",
+      "link": "https://www.texastribune.org/2022/11/16/texas-execution-stephen-barbee-tarrant-county/",
+      "total": "7"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "name": "Tracy Beatty",
+      "date": "2022-11-09",
+      "link": "https://www.texastribune.org/2022/11/09/texas-execution-tracy-beatty/",
+      "total": "8"
+    },
+    {
+      "dose": "5",
+      "type": "retested",
+      "est_date": "Fall 2022",
+      "total": "9"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2022-10-05",
+      "name": "John Ramirez",
+      "link": "https://www.texastribune.org/2022/10/04/john-ramirez-texas-execution/",
+      "total": "9"
+    },
+    {
+      "dose": "2",
+      "type": "retested",
+      "est_date": "Fall 2022",
+      "total": "10"
+    },
+    {
+      "dose": "-1",
+      "type": "return",
+      "date": "2022-09-30",
+      "total": "10"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2022-08-17",
+      "name": "Kosoul Chanthakoummane",
+      "link": "https://www.texastribune.org/2022/08/17/texas-execution-kosoul-chanthakoummane/",
+      "total": "11"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2022-04-21",
+      "name": "Carl Buntion",
+      "link": "https://www.texastribune.org/2022/04/21/texas-execution-carl-buntion/",
+      "total": "12"
+    },
+    {
+      "dose": "1",
+      "type": "retested",
+      "date": "2022-02-03",
+      "total": "13"
+    },
+    {
+      "dose": "10",
+      "type": "retested",
+      "est_date": "Early 2022",
+      "total": "12"
+    },
+    {
+      "dose": "-1",
+      "type": "return",
+      "date": "2021-12-20",
+      "total": "12"
+    },
+    {
+      "dose": "2",
+      "type": "retested",
+      "est_date": "Winter 2021",
+      "total": "13"
+    },
+    {
+      "dose": "-1",
+      "type": "remove",
+      "date": "2021-11-17",
+      "total": "13"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2021-09-28",
+      "name": "Rick Rhoades",
+      "link": "https://www.texastribune.org/2021/09/28/texas-execution-rick-rhoades/",
+      "total": "14"
+    },
+    {
+      "dose": "12",
+      "type": "retested",
+      "est_date": "Summer 2020",
+      "total": "15"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2021-06-30",
+      "name": "John Hummel",
+      "link": "https://www.texastribune.org/2021/06/30/texas-execution-john-hummel/",
+      "total": "15"
+    },
+    {
+      "dose": "-1",
+      "type": "execution",
+      "date": "2021-05-19",
+      "name": "Quintin Jones",
+      "link": "https://www.texastribune.org/2021/05/19/texas-execution-quintin-jones/",
+      "total": "16"
+    },
+    {
+      "dose": "+5",
+      "type": "add",
+      "date": "2021-03-18",
+      "total": "17"
+    },
+    {
+      "dose": "-4",
       "type": "expire",
-      "date": "2021-01-29"
+      "date": "2021-01-29",
+      "total": "12"
     },
     {
       "dose": "12",
